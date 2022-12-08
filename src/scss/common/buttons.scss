@@ -1,0 +1,91 @@
+.button {
+	padding: 6px 40px;
+	font-family: $ff;
+	font-size: 20px;
+	background: $main;
+	border: 0;
+	color: $black;
+	border-radius: $bord;
+	transition: background ease $tr,
+				margin ease 0.5s;
+	cursor: pointer;
+
+	&:hover {
+		background: rgb(211, 210, 210);
+	}
+
+	@media all and (min-width: $md) {
+		font-size: 12px;
+		padding: 3px;
+	}
+}
+
+.burger-button {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	margin-left: auto;
+	cursor: pointer;
+
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 4px;
+		background: $accent;
+		transition: transform ease $tr;
+
+		&::before, &::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background: $accent;
+		}
+
+		&::before {
+			top: 10px;
+			width: 80%;
+			left: 10%;
+			transition: left ease $tr,
+				opacity ease $tr, width ease $tr;
+		}
+
+		&::after {
+			top: 20px;
+			transition: transform ease $tr;
+		}
+	}
+
+	&:hover {
+		span::before {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+	&.opened {
+		span {
+			transform: rotate( -45deg );
+			top: 10px;
+		}
+
+		span::before {
+			opacity: 0;
+		}
+
+		span::after {
+			transform: rotate( 90deg );
+			top: 0;
+		}
+	}
+
+	@media all and (min-width: $md) {
+		display: none;
+	}
+}
