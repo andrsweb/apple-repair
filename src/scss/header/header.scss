@@ -9,7 +9,7 @@
 
 	&-logo {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		width: 40px;
 		height: auto;
 		z-index: 100;
@@ -27,6 +27,7 @@
 			padding-top: 25px;
 			border-right: 1px dotted $black;
 			transition: border-right ease $tr;
+			justify-content: center;
 		}
 
 		.logo {

@@ -1,0 +1,263 @@
+.hero {
+	padding: 20px 0;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0;
+	}
+
+	.container {
+		max-width: 1400px;
+
+		@media all and (min-width: $xl) {
+			padding-left: 80px;
+		}
+	}
+
+	h1 {
+		margin-bottom: 60px;
+	}
+
+	h2 {
+		margin-bottom: 30px;
+		font-size: 15px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 80px;
+
+			span {
+				padding: 20px;
+				border: 3px solid $accent;
+				border-radius: $bord;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+	}
+
+	&-item {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		@media all and (min-width: $sm) {
+			width: calc( 33.333% - 10px );
+			margin-right: 10px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		span {
+			color: $accent;
+		}
+
+		&-text {
+			margin-left: 10px;
+			font-size: 18px;
+
+			@media all and (min-width: $sm) {
+				font-size: 10px;
+				margin-left: 5px;
+			}
+
+			@media all and (min-width: $m) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 13px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 16px;
+			}
+		}
+
+		img {
+			max-width: 100%;
+
+			@media all and (min-width: $sm) {
+				max-width: 60%;
+			}
+
+			@media all and (min-width: $m) {
+				max-width: 80%;
+			}
+
+			@media all and (min-width: $lg) {
+				max-width: 60%;
+			}
+
+			@media all and (min-width: $xl) {
+				max-width: 70%;
+			}
+
+			@media all and (min-width: $xxl) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&-lists {
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $sm) {
+			height: 100%;
+			max-height: 40px;
+			overflow: hidden;
+		}
+
+		@media all and (min-width: $m) {
+			max-height: 50px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-height: 60px;
+		}
+
+		@media all and (min-width: $xxl) {
+			// max-height: 60px;
+		}
+
+
+		&-wrapper {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 50px;
+
+			@media all and (min-width: $lg) {
+				width: 50%;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		@media all and (min-width: $sm) {
+			animation: move 5s infinite linear alternate-reverse;
+
+			&.move {
+				@keyframes move {
+					from {
+						transform: translateY( 0 );
+					}
+
+					to {
+						transform: translateY( -100% );
+					}
+				}
+			}
+		}
+
+		@media all and (min-width: $xxl) {
+			margin-bottom: 5px;
+		}
+
+
+		&-num {
+			font-family: $ff;
+			font-weight: $fw-bold;
+			font-size: 25px;
+			margin-top: 30px;
+			text-align: center;
+
+			@media all and (min-width: $lg) {
+				margin-top: 80px;
+				font-size: 40px;
+			}
+		}
+	}
+
+	&-sale {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
+
+		&-wrapper {
+			cursor: pointer;
+			padding: 30px;
+			width: 100%;
+			max-width: 450px;
+			text-align: center;
+			background: $accent;
+			border-top-left-radius: 20%;
+			border-top-right-radius: 40%;
+			border-bottom-right-radius: 20%;
+			border-bottom-left-radius: 40%;
+			color: $white;
+			transition: opacity ease $tr,
+				border-top-left-radius ease $tr,
+				border-top-right-radius ease $tr,
+				border-bottom-right-radius ease $tr,
+				border-bottom-left-radius ease $tr;
+
+			&:hover {
+				opacity: $op;
+				border-top-left-radius: 40%;
+				border-top-right-radius: 20%;
+				border-bottom-right-radius: 40%;
+				border-bottom-left-radius: 20%;
+			}
+		}
+
+		h3 {
+			font-size: 30px; //50
+
+			@media all and (min-width: $lg) {
+				font-size: 40px;
+			}
+		}
+
+		&-text {
+			font-size: 15px;
+
+			@media all and (min-width: $md) {
+				font-size: 20px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 25px;
+			}
+		}
+
+		&-time {
+			font-family: $ff;
+			font-weight: $fw-bold;
+			font-size: 25px;
+		}
+	}
+}

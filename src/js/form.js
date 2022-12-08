@@ -10,16 +10,18 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const callForm = () => {
     const formWrapper = document.querySelector( '.form-wrapper')
-    const formButton  = document.querySelector( '.open-form' )
+    const formButton  = document.querySelectorAll( '.open-form' )
     setTargetElement( document.querySelector( '#form-lock' ) )
 
-    formButton.addEventListener( 'click', () => {
-        if( ! formWrapper && ! formButton ) return
+    formButton.forEach( button => {
+        button.addEventListener( 'click', () => {
+            if( ! formWrapper && ! formButton ) return
 
-        if( ! formWrapper.classList.contains( 'opened' ) ) {
-            formWrapper.classList.add( 'opened' )
-            disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
-        }
+            if( ! formWrapper.classList.contains( 'opened' ) ) {
+                formWrapper.classList.add( 'opened' )
+                disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
+            }
+        } )
     } )
 
     formWrapper.addEventListener( 'click', e => {
