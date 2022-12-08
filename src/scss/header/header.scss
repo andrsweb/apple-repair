@@ -13,7 +13,6 @@
 		width: 40px;
 		height: auto;
 		z-index: 100;
-		cursor: pointer;
 
 		@media all and (min-width: $md) {
 			width: 80px;
@@ -26,12 +25,13 @@
 			left: 0;
 			height: 100vh;
 			padding-top: 25px;
-			border-right: 1px dotted $main;
+			border-right: 1px dotted $black;
 			transition: border-right ease $tr;
 		}
 
-		&-link {
-			height: 40px;
+		.logo {
+			cursor: pointer;
+			height: 50px;
 		}
 
 		svg {
