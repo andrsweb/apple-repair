@@ -1,0 +1,43 @@
+.select {
+    padding: 30px 0;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h2 {
+        margin-bottom: 50px; //
+
+        @media all and (min-width: $xl) {
+            margin-bottom: 100px
+        }
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        transition: opacity ease $tr;
+
+        &:hover {
+            opacity: $op;
+        }
+    }
+
+    &-text {
+        margin-top: 10px;
+        font-family: $ff;
+        font-weight: $fw-bold;
+    }
+}
