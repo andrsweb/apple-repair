@@ -1,0 +1,213 @@
+.header {
+	padding: 20px 0;
+	background: $white;
+	display: flex;
+
+	.container {
+		max-width: 1400px;
+	}
+
+	&-logo {
+		display: flex;
+		justify-content: center;
+		width: 40px;
+		height: auto;
+		z-index: 100;
+
+		@media all and (min-width: $md) {
+			width: 80px;
+			z-index: 100;
+		}
+
+		@media all and (min-width: $xl) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			padding-top: 25px;
+			border-right: 1px dotted $black;
+			transition: border-right ease $tr;
+		}
+
+		.logo {
+			cursor: pointer;
+			height: 50px;
+		}
+
+		svg {
+			width: 40px;
+			height: auto;
+			transition: opacity ease $tr;
+
+			& path {
+				fill: $black;
+			}
+
+			&:hover {
+				opacity: $op;
+			}
+		}
+	}
+
+	&-ui {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: 80px;
+		}
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&-inner {
+		position: relative;
+		z-index: 100;
+		background: $white;
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			position: static;
+			display: flex;
+			flex-direction: row;
+			opacity: 1;
+			visibility: visible;
+			z-index: 1;
+			width: calc( 100% - 80px );
+		}
+
+		&.opened {
+			padding: 20px 0;
+			position: fixed;
+			background: $white;
+			top: 96px;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+			z-index: 100;
+			overflow-y: auto;
+			height: calc( 100% - 96px);
+		}
+	}
+
+	&-title {
+		font-family: $ff;
+		font-weight: $fw-bold;
+		font-size: 25px;
+		color: $accent;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 25px;
+		}
+	}
+
+	&-menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		&-item {
+			position: relative;
+			font-family: $ff;
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: 10px;
+			text-decoration-color: transparent;
+			text-decoration-style: solid;
+			text-decoration-line: underline;
+			text-underline-offset: 10px;
+			transition: text-decoration-color ease $tr,
+						color ease $tr;
+
+			@media all and (min-width: $md) {
+				margin-bottom: 0;
+				margin-right: 10px;
+				text-align: left;
+				font-size: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 15px;
+			}
+
+			@media all and (min-width: $xl) {
+				margin-right: 20px;
+			}
+
+			@media all and (min-width: $xxl) {
+				font-size: 20px;
+			}
+
+			&:hover {
+				text-decoration-color: $accent;
+			}
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-num {
+		font-family: $ff;
+		font-size: 20px;
+		font-weight: $fw-bold;
+
+		@media all and (min-width: $md) {
+			font-size: 10px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+	}
+
+	&-work {
+		font-size: 20px;
+		color: $accent;
+
+		@media all and (min-width: $md) {
+			font-size: 10px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+	}
+}

@@ -1,9 +1,9 @@
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
+
+	renderSVGs( document.querySelector( '.header-logo' ) )
 } )
 
-
-// renderSVGs( document.querySelector( '.brands' ) )
 
 /**
  * Render SVG code from images (<img /> tags).
