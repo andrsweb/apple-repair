@@ -86,6 +86,13 @@
                 width: 100%;
                 max-width: 300px;
                 margin: 15px 0;
+                background: $accent;
+                color: $white;
+                transition: opacity ease $tr;
+
+                &:hover {
+                    opacity: $op;
+                }
 
                 @media all and (min-width: $md) {
                     font-size: 20px
