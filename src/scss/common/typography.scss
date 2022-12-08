@@ -33,12 +33,11 @@ h3, .h3 {
 a {
 	display: inline-block;
 	text-decoration: none;
-	transition: color ease-out $tr,
-			text-decoration ease $tr;
+	transition: color ease-out $tr;
+	color: $black;
 
 	&:hover {
-		text-decoration: underline;
-		text-underline-offset: 5px;
+		color: $accent;
 	}
 }
 

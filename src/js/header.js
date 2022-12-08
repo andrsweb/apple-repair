@@ -6,7 +6,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const toogleBurgerMenu = () => {
 	const burgerButton  = document.querySelector( '.burger-button' )
-	const headerWrapper = document.querySelector( '.header-wrapper' )
+	const headerWrapper = document.querySelector( '.header-inner' )
 
 	burgerButton.addEventListener( 'click', () => {
 
