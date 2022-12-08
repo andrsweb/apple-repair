@@ -1,0 +1,41 @@
+.footer {
+    padding: 50px 0 10px;
+    text-align: center;
+
+    @media all and (min-width: $md) {
+        padding: 100px 0 20px;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    .address {
+        font-family: $ff;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &-num {
+        font-family: $ff;
+        font-weight: $fw-bold;
+        color: $accent;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &-text {
+        font-size: 15px;
+    }
+
+    &-privacy {
+        font-size: 15px;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: $black;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
