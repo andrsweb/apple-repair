@@ -1,0 +1,52 @@
+.garranty {
+    padding: 20px 0;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    &-title {
+        position: relative;
+        margin-bottom: 50px;
+
+        h2 {
+            color: $white;
+            text-shadow: 1px 1px 2px $white;
+            top: 10%;
+            left: 10%;
+            font-weight: $fw-medium;
+            font-size: 20px;
+
+            @media all and (min-width: $xl) {
+                font-size: 50px;
+            }
+
+            span {
+                font-weight: $fw-bold;
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+    }
+
+    &-text {
+        font-size: 12px;
+        padding: 0 10px;
+        text-align: center;
+
+        @media all and (min-width: $md) {
+            padding:  0 50px;
+            font-size: 15px;
+        }
+
+        @media all and (min-width: $xl) {
+            font-size: 20px;
+        }
+    }
+}
