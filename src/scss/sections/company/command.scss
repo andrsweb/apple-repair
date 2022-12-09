@@ -1,0 +1,50 @@
+.command {
+    padding: 100px 0 50px;
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h2 {
+        margin-bottom: 80px;
+    }
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-items {
+        display: flex;
+    }
+
+    &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @media all and (min-width: $md) {
+            padding-right: 10px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        img {
+            max-height: 175px;
+
+            @media all and (min-width: $sm) {
+                max-height: 250px;
+            }
+
+            @media all and (min-width: $sm) {
+                max-height: 300px;
+            }
+
+            @media all and (min-width: $md) {
+                max-height: 100%;
+            }
+        }
+    }
+}
