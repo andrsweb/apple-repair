@@ -1,7 +1,173 @@
 .company-subtext {
-    padding: 50px 0;
+	padding: 50px 0;
 
-    .container {
-        max-width: 1400px;
-    }
+	.container {
+		max-width: 1400px;
+	}
+}
+
+.company-hero {
+	padding: 0 50px;
+
+	.container {
+		max-width: 1400px;
+	}
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&-text {
+		font-family: $ff;
+	}
+
+	h1 {
+		font-family: $round;
+		margin-bottom: 150px;
+		color: $black;
+		font-size: 50px;
+		text-shadow: 1px 1px 2px $black;
+	}
+
+	h3 {
+		text-align: left;
+	}
+
+	&-info {
+		width: 30%;
+		text-align: left;
+	}
+
+	&-anim {
+		display: flex;
+		justify-content: center;
+		width: 70%;
+	}
+
+	.apple {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		animation: apple 15s ease infinite;
+
+		@keyframes apple {
+			0% {
+				opacity: 0;
+			}
+
+			50% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+			}
+		}
+	}
+
+	.anim {
+		width: 150px;
+		height: 150px;
+		position: relative;
+		animation: anim 30s infinite ease-in-out;
+	}
+
+	.anim span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: 4px solid #0B1B48;
+
+		& img {
+			transform: rotate(125deg);
+		}
+
+		&:nth-child(1) {
+			animation: span-1 15s ease-in-out infinite;
+		}
+
+		&:nth-child(2) {
+			animation: span-2 15s ease-in-out infinite;
+		}
+
+		&:nth-child(3) {
+			animation: span-3 15s ease-in-out infinite;
+		}
+
+		&:nth-child(4) {
+			animation: span-4 15s ease-in-out infinite;
+		}
+	}
+
+	@keyframes anim {
+		from {
+			transform: rotate(0);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes span-1 {
+		0% {
+			transform: translate(0);
+		}
+
+		50% {
+			transform: translate(-150px, 0);
+		}
+
+		100% {
+			transform: translate(0);
+		}
+	}
+
+	@keyframes span-2 {
+		0% {
+			transform: translate(0);
+		}
+
+		50% {
+			transform: translate(150px, 0);
+		}
+
+		100% {
+			transform: translate(0);
+		}
+	}
+
+	@keyframes span-3 {
+		0% {
+			transform: translate(0);
+		}
+
+		50% {
+			transform: translate(0, -150px);
+		}
+
+		100% {
+			transform: translate(0);
+		}
+	}
+
+	@keyframes span-4 {
+		0% {
+			transform: translate(0);
+		}
+
+		50% {
+			transform: translate(0, 150px);
+		}
+
+		100% {
+			transform: translate(0);
+		}
+	}
 }
