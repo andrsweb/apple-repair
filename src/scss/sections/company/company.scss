@@ -1,5 +1,5 @@
 .company-subtext {
-	padding: 50px 0;
+	padding: 40px 0 10px; //
 
 	.container {
 		max-width: 1400px;
@@ -7,7 +7,11 @@
 }
 
 .company-hero {
-	padding: 0 50px;
+	padding: 0 0 20px;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0;
+	}
 
 	.container {
 		max-width: 1400px;
@@ -15,40 +19,96 @@
 
 	&-wrapper {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&-text {
 		font-family: $ff;
+		width: 100%;
 	}
 
 	h1 {
 		font-family: $round;
-		margin-bottom: 150px;
+		margin-bottom: 40px;
 		color: $black;
-		font-size: 50px;
+		font-size: 40px;
 		text-shadow: 1px 1px 2px $black;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 100px;
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 50px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-bottom: 180px;
+		}
 	}
 
 	h3 {
-		text-align: left;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
 	}
 
 	&-info {
-		width: 30%;
-		text-align: left;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 100px;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+			text-align: left;
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $xl) {
+			width: 40%;
+			padding-left: 24px;
+		}
+
+		@media all and (min-width: $xxl) {
+			width: 30%;
+		}
+
+		@media all and (min-width: 1450px) {
+			padding-left: 0;
+		}
 	}
 
 	&-anim {
 		display: flex;
 		justify-content: center;
-		width: 70%;
+		align-items: center;
+		width: 100%;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+		}
+
+		@media all and (min-width: $xl) {
+			width: 60%;
+		}
+
+		@media all and (min-width: $xxl) {
+			width: 70%;
+		}
 	}
 
 	.apple {
+		max-width: 50%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate( -50%, -50% );
+		transform: translate(-50%, -50%);
 		animation: apple 15s ease infinite;
 
 		@keyframes apple {
@@ -67,22 +127,32 @@
 	}
 
 	.anim {
-		width: 150px;
-		height: 150px;
+		width: 80px;
+		height: 80px;
 		position: relative;
 		animation: anim 30s infinite ease-in-out;
+
+		@media all and (min-width: $xl) {
+			width: 150px;
+			height: 150px;
+		}
 	}
 
 	.anim span {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 150px;
-		height: 150px;
+		width: 80px;
+		height: 80px;
 		position: absolute;
 		left: 0;
 		top: 0;
 		border: 4px solid #0B1B48;
+
+		@media all and (min-width: $xl) {
+			width: 150px;
+			height: 150px;
+		}
 
 		& img {
 			transform: rotate(125deg);
@@ -121,7 +191,7 @@
 		}
 
 		50% {
-			transform: translate(-150px, 0);
+			transform: translate(-80px, 0);
 		}
 
 		100% {
@@ -135,7 +205,7 @@
 		}
 
 		50% {
-			transform: translate(150px, 0);
+			transform: translate(80px, 0);
 		}
 
 		100% {
@@ -149,7 +219,7 @@
 		}
 
 		50% {
-			transform: translate(0, -150px);
+			transform: translate(0, -80px);
 		}
 
 		100% {
@@ -163,11 +233,79 @@
 		}
 
 		50% {
-			transform: translate(0, 150px);
+			transform: translate(0, 80px);
 		}
 
 		100% {
 			transform: translate(0);
+		}
+	}
+
+	@media all and (min-width: $xl) {
+		@keyframes anim {
+			from {
+				transform: rotate(0);
+			}
+
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes span-1 {
+			0% {
+				transform: translate(0);
+			}
+
+			50% {
+				transform: translate(-150px, 0);
+			}
+
+			100% {
+				transform: translate(0);
+			}
+		}
+
+		@keyframes span-2 {
+			0% {
+				transform: translate(0);
+			}
+
+			50% {
+				transform: translate(150px, 0);
+			}
+
+			100% {
+				transform: translate(0);
+			}
+		}
+
+		@keyframes span-3 {
+			0% {
+				transform: translate(0);
+			}
+
+			50% {
+				transform: translate(0, -150px);
+			}
+
+			100% {
+				transform: translate(0);
+			}
+		}
+
+		@keyframes span-4 {
+			0% {
+				transform: translate(0);
+			}
+
+			50% {
+				transform: translate(0, 150px);
+			}
+
+			100% {
+				transform: translate(0);
+			}
 		}
 	}
 }
