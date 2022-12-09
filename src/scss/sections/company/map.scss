@@ -1,0 +1,75 @@
+.map {
+    padding: 30px 0;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &-items {
+        display: flex;
+    }
+
+    &-iframe {
+        width: 50%;
+    }
+
+    &-info {
+        width: 50%;
+
+        &-text {
+            font-size: 20px;
+            margin-bottom: 30px;
+
+            a {
+                color: $accent;
+                font-weight: $fw-bold;
+                font-size: 22px;
+            }
+        }
+    }
+
+    &-sale-text {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    &-sale {
+        font-weight: $fw-bold;
+        font-size: 20px;
+        color: $accent;
+    }
+
+    .time {
+        color: $accent;
+        font-weight: $fw-bold;
+        font-size: 20px;
+    }
+
+    iframe {
+        max-width: 500px;
+        border: 0;
+        border-radius: $bord;
+        filter: grayscale(70%);
+    }
+}
+
+.small-form {
+    padding: 0;
+    max-width: 100%;
+    align-items: flex-start;
+    box-shadow: none;
+
+    fieldset {
+        padding: 0;
+    }
+}
