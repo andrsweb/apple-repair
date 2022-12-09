@@ -10,6 +10,7 @@
     }
 
     &-wrapper {
+        position: relative;
         display: flex;
     }
 
@@ -46,5 +47,45 @@
                 max-height: 100%;
             }
         }
+    }
+
+    .swiper-prev, .swiper-next {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $black;
+        border-radius: 50%;
+        cursor: pointer;
+        background: $white;
+        transition: opacity ease $tr;
+
+        &:hover {
+            opacity: $op;
+        }
+
+        span {
+            position: absolute;
+            top: 63%;
+            left: 35%;
+            width: 15px;
+            height: 15px;
+            border-top: 4px solid $black;
+            border-right: 4px solid $black;
+            transform: rotate( -135deg )
+                        translate( 50%, 50% );
+        }
+    }
+
+    .swiper-prev {
+        left: 0;
+        bottom: 50%;
+        transform: translateY( 50% );
+    }
+
+    .swiper-next {
+        right: 0;
+        bottom: 50%;
+        transform: rotate( 180deg )
+                translateY( -50% );
     }
 }
