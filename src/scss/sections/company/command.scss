@@ -88,4 +88,10 @@
         transform: rotate( 180deg )
                 translateY( -50% );
     }
+
+    .swiper-next, .swiper-prev {
+        @media all and (min-width: $md) {
+            display: none;
+        }
+    }
 }
