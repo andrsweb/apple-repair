@@ -89,9 +89,11 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		margin-bottom: 40px;
 
 		@media all and (min-width: $md) {
 			width: 50%;
+			margin-bottom: 0;
 		}
 
 		@media all and (min-width: $xl) {
@@ -130,11 +132,11 @@
 		width: 80px;
 		height: 80px;
 		position: relative;
-		animation: anim 30s infinite ease-in-out;
 
 		@media all and (min-width: $xl) {
 			width: 150px;
 			height: 150px;
+			animation: anim 30s infinite ease-in-out;
 		}
 	}
 
@@ -155,89 +157,47 @@
 		}
 
 		& img {
-			transform: rotate(125deg);
+			@media all and (min-width: $xl) {
+				transform: rotate(125deg);
+			}
 		}
 
 		&:nth-child(1) {
-			animation: span-1 15s ease-in-out infinite;
+			transform: translate(-90px, 0);
 		}
 
 		&:nth-child(2) {
-			animation: span-2 15s ease-in-out infinite;
+			transform: translate(90px, 0);
 		}
 
 		&:nth-child(3) {
-			animation: span-3 15s ease-in-out infinite;
+			transform: translate(0, -90px);
 		}
 
 		&:nth-child(4) {
-			animation: span-4 15s ease-in-out infinite;
-		}
-	}
-
-	@keyframes anim {
-		from {
-			transform: rotate(0);
+			transform: translate(0, 90px);
 		}
 
-		to {
-			transform: rotate(360deg);
-		}
-	}
+		@media all and (min-width: $xl) {
+			&:nth-child(1) {
+				animation: span-1 15s ease-in-out infinite;
+				transform: translate( 0 );
+			}
 
-	@keyframes span-1 {
-		0% {
-			transform: translate(0);
-		}
+			&:nth-child(2) {
+				animation: span-2 15s ease-in-out infinite;
+				transform: translate( 0 );
+			}
 
-		50% {
-			transform: translate(-80px, 0);
-		}
+			&:nth-child(3) {
+				animation: span-3 15s ease-in-out infinite;
+				transform: translate( 0 );
+			}
 
-		100% {
-			transform: translate(0);
-		}
-	}
-
-	@keyframes span-2 {
-		0% {
-			transform: translate(0);
-		}
-
-		50% {
-			transform: translate(80px, 0);
-		}
-
-		100% {
-			transform: translate(0);
-		}
-	}
-
-	@keyframes span-3 {
-		0% {
-			transform: translate(0);
-		}
-
-		50% {
-			transform: translate(0, -80px);
-		}
-
-		100% {
-			transform: translate(0);
-		}
-	}
-
-	@keyframes span-4 {
-		0% {
-			transform: translate(0);
-		}
-
-		50% {
-			transform: translate(0, 80px);
-		}
-
-		100% {
-			transform: translate(0);
+			&:nth-child(4) {
+				animation: span-4 15s ease-in-out infinite;
+				transform: translate( 0 );
+			}
 		}
 	}
 
