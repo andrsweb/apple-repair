@@ -6,7 +6,11 @@
     }
 
     h2 {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $md) {
+            margin-bottom: 80px;
+        }
     }
 
     &-wrapper {
