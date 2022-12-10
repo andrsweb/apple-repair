@@ -1,0 +1,97 @@
+.command {
+    padding: 100px 0 50px;
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h2 {
+        margin-bottom: 80px;
+    }
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    &-items {
+        display: flex;
+    }
+
+    &-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @media all and (min-width: $md) {
+            padding-right: 10px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        img {
+            max-height: 175px;
+
+            @media all and (min-width: $sm) {
+                max-height: 250px;
+            }
+
+            @media all and (min-width: $sm) {
+                max-height: 300px;
+            }
+
+            @media all and (min-width: $md) {
+                max-height: 100%;
+            }
+        }
+    }
+
+    .swiper-prev, .swiper-next {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $black;
+        border-radius: 50%;
+        cursor: pointer;
+        background: $white;
+        transition: opacity ease $tr;
+
+        &:hover {
+            opacity: $op;
+        }
+
+        span {
+            position: absolute;
+            top: 63%;
+            left: 35%;
+            width: 15px;
+            height: 15px;
+            border-top: 4px solid $black;
+            border-right: 4px solid $black;
+            transform: rotate( -135deg )
+                        translate( 50%, 50% );
+        }
+    }
+
+    .swiper-prev {
+        left: 0;
+        bottom: 50%;
+        transform: translateY( 50% );
+    }
+
+    .swiper-next {
+        right: 0;
+        bottom: 50%;
+        transform: rotate( 180deg )
+                translateY( -50% );
+    }
+
+    .swiper-next, .swiper-prev {
+        @media all and (min-width: $md) {
+            display: none;
+        }
+    }
+}

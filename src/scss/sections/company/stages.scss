@@ -1,0 +1,160 @@
+.stages {
+	padding: 30px 0;
+
+	@media all and (min-width: $md) {
+		padding: 50px 0;
+	}
+
+	.container {
+		max-width: 1400px;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+
+		@media all and (min-width: $md) {
+			margin: 0 -20px;
+			justify-content: center;
+		}
+
+		@media all and (min-width: $xl) {
+			margin: 0 -10px;
+		}
+
+		@media all and (min-width: $xxl) {
+			margin: 0 -20px;
+		}
+	}
+
+	&-item {
+		position: relative;
+		display: flex;
+		padding: 0 10px;
+		width: calc( 100% / 1 );
+		margin-bottom: 40px;
+		border-radius: $bord;
+		background: rgba(238, 237, 237, 0.342);
+
+		@media all and (min-width: $md) {
+			padding: 0 20px;
+			width: calc( 100% / 3 );
+			background: none;
+			border-radius: 0;
+		}
+
+		@media all and (min-width: $xl) {
+			width: calc( 100% / 5 );
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $md) {
+            &:nth-child(n + 4) {
+				margin-bottom: 0;
+			}
+        }
+
+		@media all and (min-width: $xl) {
+			padding: 0 10px;
+
+			&:nth-child( n ) {
+				margin-bottom: 0;
+			}
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 0 20px;
+		}
+
+		&::after {
+			content: "1";
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			font-size: 20px;
+			font-weight: $fw-bold;
+			color: $white;
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+			background: $accent;
+			border-top-left-radius: 50%;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+		}
+
+		&:nth-child(2)::after {
+			content: "2";
+		}
+
+		&:nth-child(3)::after {
+			content: "3";
+		}
+
+		&:nth-child(4)::after {
+			content: "4";
+		}
+
+		&:last-child::after {
+			content: "5";
+		}
+
+		&-inner {
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+			@media all and (min-width: $md) {
+				border-radius: $bord;
+				background: rgba(238, 237, 237, 0.342);
+			}
+		}
+	}
+
+	&-title {
+		padding-top: 10px;
+		font-weight: $fw-bold;
+		font-size: 20px;
+		margin-bottom: 40px;
+
+		@media all and (min-width: $m) {
+			font-size: 25px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xxl) {
+			font-size: 25px;
+		}
+	}
+
+	&-text {
+		font-size: 15px;
+		padding-right: 5px;
+
+		@media all and (min-width: $m) {
+			font-size: 17px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xxl) {
+			font-size: 17px;
+		}
+	}
+}

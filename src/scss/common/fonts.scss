@@ -81,3 +81,16 @@
         url('../fonts/roboto-v30-latin-700.svg#Roboto') format('svg');
     /* Legacy iOS */
 }
+
+@font-face {
+    font-family: 'Rounds';
+    src: url('../fonts/RoundsBlack.eot');
+    src: url('../fonts/RoundsBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RoundsBlack.woff2') format('woff2'),
+        url('../fonts/RoundsBlack.woff') format('woff'),
+        url('../fonts/RoundsBlack.ttf') format('truetype'),
+        url('../fonts/RoundsBlack.svg#RoundsBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
