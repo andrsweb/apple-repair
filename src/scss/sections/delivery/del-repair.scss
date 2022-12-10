@@ -21,11 +21,21 @@
 
     &-item {
         padding: 0 10px;
-        width: calc( 100% / 3 );
+        width: calc( 100% / 1 );
         margin-bottom: 50px;
 
-        &:nth-child( n + 4 ) {
+        @media all and (min-width: $md) {
+            width: calc( 100% / 3 );
+        }
+
+        &:last-child {
             margin-bottom: 0;
+        }
+
+        @media all and (min-width: $md) {
+            &:nth-child( n + 4 ) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -52,4 +62,8 @@
     &-text {
         font-size: 15px;
     }
+}
+
+.page-del .command {
+    padding: 20px 0;
 }
