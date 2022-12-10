@@ -169,4 +169,88 @@
             display: block;
         }
     }
+
+    &-testi {
+        padding: 20px 0;
+
+        @media all and (min-width: $md) {
+            padding: 50px 0;
+        }
+
+        .container {
+            max-width: 1400px;
+        }
+
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        &-item {
+            padding: 0 10px;
+            width: calc( 100% / 1 );
+            margin-bottom: 10px;
+
+            @media all and (min-width: $md) {
+                width: calc( 100% / 2 );
+                margin-bottom: 30px;
+            }
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            height: 100%;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+
+            @media all and (min-width: $lg) {
+                flex-direction: row;
+            }
+        }
+
+        &-img {
+            margin-bottom: 10px;
+
+            @media all and (min-width: $lg) {
+                margin-bottom: 0;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        &-name {
+            font-weight: $fw-bold;
+
+            @media all and (min-width: $lg) {
+                margin-left: 20px;
+            }
+        }
+
+        &-stars {
+            display: flex;
+
+            @media all and (min-width: $lg) {
+                margin-left: auto;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            text-align: center;
+
+            @media all and (min-width: $m) {
+                font-size: 15px;
+            }
+        }
+    }
 }
