@@ -1,0 +1,49 @@
+.page-iphone-repair h1, .page-ipad-repair h1, .page-iphone14-repair h1 {
+    text-align: left;
+    margin-bottom: 30px;
+
+    @media all and (min-width: $xl) {
+        margin-bottom: 80px;
+    }
+}
+
+.page-iphone-repair .hero-list,
+.page-ipadp-repair .hero-list,
+.page-iphone14-repair .hero-list {
+    animation: none;
+}
+
+.page-iphone-repair .hero-lists,
+.page-ipadp-repair .hero-lists,
+.page-iphone14-repair .hero-lists {
+    max-height: 100%;
+}
+
+.page-iphone-repair .header-logo,
+.page-ipadp-repair .header-logo,
+.page-iphone14-repair .header-logo {
+    cursor: pointer;
+    transition: background ease 0.5s;
+
+    &:hover {
+        background: $accent;
+
+        svg path {
+            fill: $white;
+        }
+
+        .header-arrow {
+            span {
+                border-color: $white;
+            }
+        }
+    }
+
+    .logo {
+        height: 100%;
+    }
+
+    svg:hover {
+        opacity: 1;
+    }
+}
