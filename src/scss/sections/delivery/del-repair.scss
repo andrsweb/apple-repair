@@ -69,11 +69,10 @@
 }
 
 .page-del .header-logo {
-	cursor: pointer;
 	transition: background ease 0.5s;
 
 	&:hover {
-		background: $accent;
+		background: $dark;
 
 		svg path {
 			fill:  $white;
@@ -84,10 +83,6 @@
 				border-color: $white;
 			}
 		}
-	}
-
-	.logo {
-		height: 100%;
 	}
 
 	svg:hover {

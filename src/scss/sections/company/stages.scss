@@ -39,7 +39,7 @@
 		width: calc( 100% / 1 );
 		margin-bottom: 40px;
 		border-radius: $bord;
-		background: rgba(238, 237, 237, 0.342);
+		background: rgba(238, 237, 237, 0.459);
 
 		@media all and (min-width: $md) {
 			padding: 0 20px;
@@ -87,7 +87,7 @@
 			right: 0;
 			width: 40px;
 			height: 40px;
-			background: $accent;
+			background: $span;
 			border-top-left-radius: 50%;
 			border-bottom-left-radius: 50%;
 			border-bottom-right-radius: 50%;
@@ -117,7 +117,7 @@
 
 			@media all and (min-width: $md) {
 				border-radius: $bord;
-				background: rgba(238, 237, 237, 0.342);
+				background: rgba(238, 237, 237, 0.575);
 			}
 		}
 	}
