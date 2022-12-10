@@ -22,17 +22,16 @@
     max-height: 100%;
 }
 
-.polityc .header-logo,
+.polityc .header-logo, .page .header-logo,
 .page-ipad72019-repair .header-logo,
 .page-iphone14-glass .header-logo,
 .page-iphone-repair .header-logo,
 .page-ipad-repair .header-logo,
 .page-iphone14-repair .header-logo {
-    cursor: pointer;
     transition: background ease 0.5s;
 
     &:hover {
-        background: $accent;
+        background: $dark;
 
         svg path {
             fill: $white;
@@ -43,10 +42,6 @@
                 border-color: $white;
             }
         }
-    }
-
-    .logo {
-        height: 100%;
     }
 
     svg:hover {
@@ -111,10 +106,11 @@
             font-size: 20px;
             text-align: center;
             margin-bottom: 20px;
+            color: $dark;
 
             span {
                 font-weight: $fw-bold;
-                color: $accent;
+                color: $span;
                 font-size: 22px;
             }
         }
@@ -123,6 +119,7 @@
             font-size: 30px;
             font-weight: $fw-bold;
             margin-bottom: 20px;
+            color: $span;
 
             @media all and (min-width: $md) {
                 font-size: 40px;
@@ -131,6 +128,7 @@
             span {
                 font-weight: $fw-regular;
                 position: relative;
+                color: $span;
 
                 &::before {
                     content: "";

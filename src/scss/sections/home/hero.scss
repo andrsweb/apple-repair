@@ -33,6 +33,7 @@
 		align-items: center;
 		margin-bottom: 10px;
 		justify-content: center;
+		color: $span;
 
 		@media all and (min-width: $sm) {
 			width: calc( 33.333% - 10px );
@@ -44,7 +45,7 @@
 		}
 
 		span {
-			color: $accent;
+			color: $black;
 		}
 
 		&-text {
@@ -158,6 +159,7 @@
 			font-size: 25px;
 			margin-top: 30px;
 			text-align: center;
+			text-shadow: 1px 1px 3px $black;
 
 			@media all and (min-width: $lg) {
 				margin-top: 80px;
@@ -183,7 +185,7 @@
 			width: 100%;
 			max-width: 450px;
 			text-align: center;
-			background: $accent;
+			background: $dark;
 			border-top-left-radius: 20%;
 			border-top-right-radius: 40%;
 			border-bottom-right-radius: 20%;
@@ -206,6 +208,7 @@
 
 		h3 {
 			font-size: 30px;
+			text-shadow: 1px 1px 3px $accent;
 
 			@media all and (min-width: $lg) {
 				font-size: 40px;
@@ -228,6 +231,8 @@
 			font-family: $ff;
 			font-weight: $fw-bold;
 			font-size: 25px;
+			text-shadow: 1px 1px 1px $white;
+			color: $white;
 		}
 	}
 }
@@ -241,7 +246,7 @@
 
 		span {
 			padding: 20px;
-			border: 3px solid $accent;
+			border: 3px solid $dark;
 			border-radius: $bord;
 		}
 	}

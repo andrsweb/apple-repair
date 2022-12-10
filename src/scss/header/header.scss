@@ -32,8 +32,12 @@
 		}
 
 		.logo {
-			cursor: pointer;
 			height: 50px;
+
+			&:hover {
+				transition: ease $tr;
+				scale: 1.1;
+			}
 		}
 
 		svg {
@@ -105,18 +109,25 @@
 	}
 
 	&-title {
-		font-family: $ff;
+		font-family: $round;
 		font-weight: $fw-bold;
 		font-size: 25px;
-		color: $accent;
+		color: $dark;
 		margin-bottom: 30px;
+		text-align: center;
+		text-shadow: 1px 1px 2px $dark;
 
 		@media all and (min-width: $md) {
-			font-size: 15px;
+			font-size: 12px;
 			margin-bottom: 0;
+			text-align: left;
 		}
 
 		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xxl) {
 			font-size: 25px;
 		}
 	}
@@ -169,7 +180,7 @@
 			}
 
 			&:hover {
-				text-decoration-color: $accent;
+				text-decoration-color: $span;
 			}
 		}
 	}
@@ -183,6 +194,7 @@
 		font-family: $ff;
 		font-size: 20px;
 		font-weight: $fw-bold;
+		text-shadow: 1px 1px 1px $black;
 
 		@media all and (min-width: $md) {
 			font-size: 10px;
@@ -193,13 +205,14 @@
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 20px;
+			font-size: 22px;
 		}
 	}
 
 	&-work {
 		font-size: 20px;
-		color: $accent;
+		color: $span;
+		text-shadow: 1px 1px 1px $dark;
 
 		@media all and (min-width: $md) {
 			font-size: 10px;
@@ -210,7 +223,7 @@
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 20px;
+			font-size: 22px;
 		}
 	}
 }
@@ -235,6 +248,17 @@
 		border-top: 5px solid $black;
 		transform: translate( -50%, -50% )
 					rotate(-140deg);
+	}
+}
+
+.header-arrow {
+	cursor: pointer;
+	span {
+
+		&:hover {
+			transition: scale ease $tr;
+			scale: 1.1;
+		}
 	}
 }
 

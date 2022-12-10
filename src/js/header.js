@@ -4,6 +4,7 @@ import { setTargetElement, getTargetElement } from './common/global'
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
+	goBack()
 	toogleBurgerMenu()
 } )
 
@@ -37,4 +38,17 @@ const toogleBurgerMenu = () => {
             enableBodyScroll( getTargetElement() )
         }
     } )
+}
+
+const goBack = () => {
+	const headerArrow = document.querySelectorAll( '.header-arrow' )
+
+	headerArrow.forEach( arrow => {
+
+		if ( ! headerArrow.length ) return
+
+		arrow.addEventListener( 'click', () => {
+			history.back()
+		} )
+	} )
 }

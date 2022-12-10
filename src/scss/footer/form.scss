@@ -10,7 +10,7 @@
 	z-index: 100;
 	overflow-y: auto;
 	padding: 20px;
-	background: #e6e6e6b7;
+	background: rgba(190, 197, 196, 0.884);
 
 	&.opened {
 		display: flex;
@@ -86,7 +86,7 @@
             width: 100%;
             max-width: 300px;
             margin: 15px 0;
-            background: $accent;
+            background: $span;
             color: $white;
             transition: opacity ease $tr;
 
@@ -101,12 +101,12 @@
     }
 }
 
-.privacy {
+.privacy-form {
     text-align: center;
     color: $black;
 
     a {
-        color: $accent;
+        color: $span;
 
         &:hover {
             text-decoration: underline;

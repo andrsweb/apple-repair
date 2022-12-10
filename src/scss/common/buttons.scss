@@ -3,16 +3,18 @@
 	font-family: $ff;
 	font-weight: $fw-medium;
 	font-size: 20px;
-	background: $main;
+	background: $dark;
 	border: 0;
-	color: $black;
+	color: $white;
+	box-shadow: 1px 1px 1px $dark;
 	border-radius: $bord;
-	transition: background ease $tr,
+	text-shadow: 1px 1px 1px $dark;
+	transition: opacity ease $tr,
 				margin ease 0.5s;
 	cursor: pointer;
 
 	&:hover {
-		background: rgb(211, 210, 210);
+		opacity: $op;
 	}
 
 	@media all and (min-width: $md) {

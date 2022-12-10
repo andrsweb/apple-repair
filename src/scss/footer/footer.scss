@@ -12,16 +12,17 @@
 
     .address {
         font-family: $ff;
-        font-size: 15px;//20
+        font-size: 15px;
         margin-bottom: 10px;
     }
 
     &-num {
         font-family: $ff;
         font-weight: $fw-bold;
-        color: $accent;
+        color: $span;
         font-size: 20px;
         margin-bottom: 10px;
+        text-shadow: 1px 1px 1px $span;
     }
 
     &-text {

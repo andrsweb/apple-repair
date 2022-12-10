@@ -61,7 +61,7 @@
                 content: "";
                 font-family: $round;
                 font-weight: $fw-bold;
-                color: $black;
+                color: $span;
                 font-size: 60px;
                 position: absolute;
                 top: 50%;
@@ -73,7 +73,7 @@
                 writing-mode: vertical-rl;
                 text-align: center;
                 height: 100%;
-                text-shadow: 1px 1px 4px $accent;
+                text-shadow: 1px 1px 4px $span;
             }
 
             &:hover::after {
