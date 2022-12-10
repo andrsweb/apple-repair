@@ -1,0 +1,119 @@
+.which-problem {
+    padding: 10px 0;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        position: relative;
+    }
+
+    &-item {
+        padding: 0 10px;
+        width: calc(100% / 2 );
+        margin-bottom: 20px;
+        color: $black;
+        font-size: 10px;
+        text-align: center;
+
+        @media all and (min-width: $m) {
+            width: calc( 100% / 3 );
+        }
+
+        @media all and (min-width: $md) {
+            font-size: 15px;
+        }
+
+        @media all and (min-width: $lg) {
+            width: calc( 100% / 4 );
+        }
+    }
+
+    &-inner {
+        height: 100%;
+        font-weight: $fw-bold;
+        border: 1px solid $black;
+        border-radius: $bord;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: background ease $tr,
+            opacity ease $tr;
+
+        &:hover {
+            background: $main;
+            opacity: $op;
+        }
+
+        @media all and (min-width: $xxl) {
+            padding: 30px;
+        }
+    }
+
+    &-text {
+        font-size: 10px;
+        text-align: center;
+
+        @media all and (min-width: $md) {
+            font-size: 15px;
+        }
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        img {
+            max-width: 60%;
+            margin: 0 auto;
+
+            @media all and (min-width: $md) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .another-problem {
+        display: block;
+        width: 250px;
+        font-weight: $fw-bold;
+        border: 1px solid $black;
+        border-radius: $bord;
+        padding: 10px;
+        transition: background ease $tr,
+            opacity ease $tr;
+        text-align: center;
+
+        &:hover {
+            background: $main;
+            opacity: $op;
+            color: $black;
+        }
+    }
+}
