@@ -10,7 +10,7 @@
             <div class="which-model-wrapper">
                 <div class="which-model-items">
                     @@loop( 'template-parts/sections/repair-iphone/which-model-item.html', [
-                        { 'model': '7<br>(2019)', 'href': '#' },
+                        { 'model': '7<br>(2019)', 'href': 'ipad72019.html' },
                         { 'model': '6<br>(2018)', 'href': '#' },
                         { 'model': '5<br>(2017)', 'href': '#' },
                         { 'model': 'Pro12.9<br>(2015)', 'href': '#' },
@@ -38,7 +38,35 @@
             </div>
         </div>
     </section>
-    @@include( 'template-parts/sections/repair-iphone/which-problem.html', { h2: 'Какая проблема с iPad?'}, )
+    <section class="which-problem">
+        <div class="container">
+            <h2>
+                Какая проблема с iPad?
+            </h2>
+            <div class="which-problem-wrapper">
+                <div class="which-problem-items">
+                    @@loop( 'template-parts/sections/repair-iphone/which-problem-item.html', [
+                            { 'src': 'img/repair-iphone/broken.png', 'text': 'Стекло', 'href': 'ipad72019glass.html' },
+                            { 'src': 'img/repair-iphone/touch.png', 'text': 'Дисплей', 'href': '#' },
+                            { 'src': 'img/repair-iphone/low.png', 'text': 'Батарея', 'href': '#' },
+                            { 'src': 'img/repair-iphone/cam.png', 'text': 'Камера', 'href': '#' },
+                            { 'src': 'img/repair-iphone/btn.png', 'text': 'Кнопка', 'href': '#' },
+                            { 'src': 'img/repair-iphone/phone.png', 'text': 'Корпус', 'href': '#' },
+                            { 'src': 'img/repair-iphone/dyn.png', 'text': 'Динамик', 'href': '#' },
+                            { 'src': 'img/repair-iphone/micro.png', 'text': 'Микрофон', 'href': '#' },
+                            { 'src': 'img/repair-iphone/pow.png', 'text': 'Не включается', 'href': '#' },
+                            { 'src': 'img/repair-iphone/nocon.png', 'text': 'Нет сети', 'href': '#' },
+                            { 'src': 'img/repair-iphone/drop.png', 'text': 'Попала влага', 'href': '#' },
+                            { 'src': 'img/repair-iphone/nowifi.png', 'text': 'Нет WiFi', 'href': '#' },
+                            { 'src': 'img/repair-iphone/back.png', 'text': 'Задняя камера', 'href': '#' }
+                        ] )
+                </div>
+                <a class="another-problem" href="another-problem.html">
+                    Другая проблема
+                </a>
+            </div>
+        </div>
+    </section>
     @@include( 'template-parts/sections/company/stages.html' )
     @@include( 'template-parts/sections/company/map.html' )
 </main>
