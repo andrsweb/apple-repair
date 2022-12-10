@@ -1,0 +1,190 @@
+.page-ipad-repair .which-model-item {
+    padding: 0 10px;
+    width: calc(100% / 2 );
+    margin-bottom: 20px;
+    color: $black;
+    font-size: 10px;
+    text-align: center;
+
+    @media all and (min-width: $m) {
+        width: calc( 100% / 3 );
+    }
+
+    @media all and (min-width: $md) {
+        font-size: 15px;
+    }
+
+    @media all and (min-width: $lg) {
+        width: calc( 100% / 5 );
+    }
+
+    @media all and (min-width: $xl) {
+        &::after {
+            opacity: 0;
+            content: "";
+            font-family: $round;
+            font-weight: $fw-bold;
+            color: $black;
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            right: -30%;
+            transform: translateY(-50%) rotate(180deg);
+            transition: opacity ease $tr;
+            z-index: -1;
+            line-height: 1;
+            writing-mode: vertical-rl;
+            text-align: center;
+            height: 100%;
+            text-shadow: 1px 1px 4px $accent;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+        &:first-child {
+            &::after {
+                content: '7 (2019)';
+            }
+        }
+
+        &:nth-child(2) {
+            &::after {
+                content: '6 (2018)';
+            }
+        }
+
+        &:nth-child(3) {
+            &::after {
+                content: '5 (2017)';
+            }
+        }
+
+        &:nth-child(4) {
+            &::after {
+                content: 'Pro12.9 (2015)';
+            }
+        }
+
+        &:nth-child(5) {
+            &::after {
+                content: 'Air3 (2019)';
+            }
+        }
+
+        &:nth-child(6) {
+            &::after {
+                content: 'Air2 (2014)';
+            }
+        }
+
+        &:nth-child(7) {
+            &::after {
+                content: 'Air1 (2013)';
+            }
+        }
+
+        &:nth-child(8) {
+            &::after {
+                content: 'Mini5 (2019)';
+            }
+        }
+
+        &:nth-child(9) {
+            &::after {
+                content: 'Mini4 (2019)';
+            }
+        }
+
+        &:nth-child(10) {
+            &::after {
+                content: 'Mini3 (2014)';
+            }
+        }
+
+        &:nth-child(11) {
+            &::after {
+                content: 'Mini2 (2013)';
+            }
+        }
+
+        &:nth-child(12) {
+            &::after {
+                content: 'Mini (2012)';
+            }
+        }
+
+        &:nth-child(13) {
+            &::after {
+                content: '4 (2012)';
+            }
+        }
+
+        &:nth-child(14) {
+            &::after {
+                content: '3 (2012)';
+            }
+        }
+
+        &:nth-child(15) {
+            &::after {
+                content: '2 (2011)';
+            }
+        }
+
+        &:nth-child(16) {
+            &::after {
+                content: 'Pro12.9 (2020)';
+            }
+        }
+
+        &:nth-child(17) {
+            &::after {
+                content: 'Pro12.9 (2017)';
+            }
+        }
+
+        &:nth-child(18) {
+            &::after {
+                content: 'Pro12.9 (2018)';
+            }
+        }
+
+        &:nth-child(19) {
+            &::after {
+                content: 'Pro11 (2020)';
+            }
+        }
+
+        &:nth-child(20) {
+            &::after {
+                content: 'Pro10.5 (2017)';
+            }
+        }
+
+        &:nth-child(21) {
+            &::after {
+                content: 'Pro11 (2018)';
+            }
+        }
+
+        &:nth-child(22) {
+            &::after {
+                content: '8 (2020)';
+            }
+        }
+
+        &:nth-child(23) {
+            &::after {
+                content: 'Pro9.7 (2016)';
+            }
+        }
+    }
+
+    @media all and (min-width: $xxl){
+        &::after {
+            font-size: 60px;
+        }
+    }
+}
