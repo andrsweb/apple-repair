@@ -1,0 +1,47 @@
+@@include( 'template-parts/header/header.html', { title: 'Ремонт iPad', class: 'page-ipad-repair' } )
+
+<main>
+    @@include( 'template-parts/sections/home/hero.html', { title: 'Ремонт iPad' } )
+    <section class="which-model">
+        <div class="container">
+            <h2>
+                Какую модель iPad нужно починить?
+            </h2>
+            <div class="which-model-wrapper">
+                <div class="which-model-items">
+                    @@loop( 'template-parts/sections/repair-iphone/which-model-item.html', [
+                        { 'model': '7<br>(2019)', 'href': '#' },
+                        { 'model': '6<br>(2018)', 'href': '#' },
+                        { 'model': '5<br>(2017)', 'href': '#' },
+                        { 'model': 'Pro12.9<br>(2015)', 'href': '#' },
+                        { 'model': 'Air3<br>(2019)', 'href': '#' },
+                        { 'model': 'Air2<br>(2014)', 'href': '#' },
+                        { 'model': 'Air1<br>(2013)', 'href': '#' },
+                        { 'model': 'Mini5<br>(2019)', 'href': '#' },
+                        { 'model': 'Mini4<br>(2015)', 'href': '#' },
+                        { 'model': 'Mini3<br>(2014)', 'href': '#' },
+                        { 'model': 'Mini2<br>(2013)', 'href': '#' },
+                        { 'model': 'Mini<br>(2012)', 'href': '#' },
+                        { 'model': '4<br>(2012)', 'href': '#' },
+                        { 'model': '3<br>(2012)', 'href': '#' },
+                        { 'model': '2<br>(2011)', 'href': '#' },
+                        { 'model': 'Pro12.9<br>(2020)', 'href': '#' },
+                        { 'model': 'Pro12.9<br>(2017)', 'href': '#' },
+                        { 'model': 'Pro12.9<br>(2018)', 'href': '#' },
+                        { 'model': 'Pro11<br>(2020)', 'href': '#' },
+                        { 'model': 'Pro10.5<br>(2017)', 'href': '#' },
+                        { 'model': 'Pro11<br>(2018)', 'href': '#' },
+                        { 'model': '8<br>(2020)', 'href': '#' },
+                        { 'model': 'Pro9.7<br>(2016)', 'href': '#' },
+                    ] )
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include( 'template-parts/sections/repair-iphone/which-problem.html', { h2: 'Какая проблема с iPad?'}, )
+    @@include( 'template-parts/sections/company/stages.html' )
+    @@include( 'template-parts/sections/company/map.html' )
+</main>
+
+@@include( 'template-parts/footer/footer.html' )
+
