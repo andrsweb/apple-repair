@@ -1,5 +1,6 @@
-.page-iphone-repair h1, .page-ipad-repair h1, .page-iphone14-repair h1,
-.page-iphone14-glass h1 {
+.page-ipad72019-repair h1,
+.page-iphone-repair h1, .page-ipad-repair h1,
+.page-iphone14-repair h1, .page-iphone14-glass h1 {
     text-align: left;
     margin-bottom: 30px;
 
@@ -7,22 +8,25 @@
         margin-bottom: 80px;
     }
 }
-
+.page-ipad72019-repair .hero-list,
 .page-iphone-repair .hero-list,
-.page-ipadp-repair .hero-list,
+.page-ipad-repair .hero-list,
 .page-iphone14-repair .hero-list {
     animation: none;
 }
 
+.page-ipad72019-repair .hero-lists,
 .page-iphone-repair .hero-lists,
-.page-ipadp-repair .hero-lists,
+.page-ipad-repair .hero-lists,
 .page-iphone14-repair .hero-lists {
     max-height: 100%;
 }
 
+.polityc .header-logo,
+.page-ipad72019-repair .header-logo,
 .page-iphone14-glass .header-logo,
 .page-iphone-repair .header-logo,
-.page-ipadp-repair .header-logo,
+.page-ipad-repair .header-logo,
 .page-iphone14-repair .header-logo {
     cursor: pointer;
     transition: background ease 0.5s;
@@ -179,6 +183,10 @@
 
         .container {
             max-width: 1400px;
+        }
+
+        h2 {
+            text-align: left;
         }
 
         &-items {

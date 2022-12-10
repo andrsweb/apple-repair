@@ -1,7 +1,7 @@
-@@include( 'template-parts/header/header.html', { title: 'Ремонт iPhone 14', class: 'page-iphone14-repair' } )
+@@include( 'template-parts/header/header.html', { title: 'Ремонт iPad 7 (2019)', class: 'page-ipad72019-repair' } )
 
 <main>
-    @@include( 'template-parts/sections/home/hero.html', { title: 'Ремонт iPhone 14' } )
+    @@include( 'template-parts/sections/home/hero.html', { title: 'Ремонт iPad 7 (2019)' } )
     <section class="which-problem">
         <div class="container">
             <h2>
@@ -10,7 +10,7 @@
             <div class="which-problem-wrapper">
                 <div class="which-problem-items">
                     @@loop( 'template-parts/sections/repair-iphone/which-problem-item.html', [
-                            { 'src': 'img/repair-iphone/broken.png', 'text': 'Стекло', 'href': '14glass.html' },
+                            { 'src': 'img/repair-iphone/broken.png', 'text': 'Стекло', 'href': 'ipad72019glass.html' },
                             { 'src': 'img/repair-iphone/touch.png', 'text': 'Дисплей', 'href': '#' },
                             { 'src': 'img/repair-iphone/low.png', 'text': 'Батарея', 'href': '#' },
                             { 'src': 'img/repair-iphone/cam.png', 'text': 'Камера', 'href': '#' },
@@ -22,7 +22,13 @@
                             { 'src': 'img/repair-iphone/nocon.png', 'text': 'Нет сети', 'href': '#' },
                             { 'src': 'img/repair-iphone/drop.png', 'text': 'Попала влага', 'href': '#' },
                             { 'src': 'img/repair-iphone/nowifi.png', 'text': 'Нет WiFi', 'href': '#' },
-                            { 'src': 'img/repair-iphone/back.png', 'text': 'Задняя камера', 'href': '#' }
+                            { 'src': 'img/repair-iphone/back.png', 'text': 'Задняя камера', 'href': '#' },
+                            { 'src': 'img/repair-iphone/raz.png', 'text': 'Замена разьемов', 'href': '#' },
+                            { 'src': 'img/repair-iphone/inst.png', 'text': 'Установка программ', 'href': '#' },
+                            { 'src': 'img/repair-iphone/obn.png', 'text': 'Обновление прошивки', 'href': '#' },
+                            { 'src': 'img/repair-iphone/rest.png', 'text': 'Восстановление', 'href': '#' },
+                            { 'src': 'img/repair-iphone/id.png', 'text': 'Создание Apple ID', 'href': '#' },
+                            { 'src': 'img/repair-iphone/mail.png', 'text': 'Настройка почтового клиента', 'href': '#' }
                         ] )
                 </div>
                 <a class="another-problem" href="another-problem.html">

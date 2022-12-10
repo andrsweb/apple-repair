@@ -1,0 +1,21 @@
+.privacy {
+    padding: 50px 0;
+    text-align: left;
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h3 {
+        margin: 30px 0;
+        text-align: left;
+    }
+
+    &-list {
+        list-style: disc ;
+
+        li {
+            margin-bottom: 20px;
+        }
+    }
+}
