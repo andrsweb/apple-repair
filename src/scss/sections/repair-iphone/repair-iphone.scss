@@ -1,0 +1,317 @@
+.which-model {
+    padding: 30px 0;
+
+    @media all and (min-width: $md) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+
+    h2 {
+        margin-bottom: 80px;
+    }
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-items {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        position: relative;
+    }
+
+    &-item {
+        padding: 0 10px;
+        width: calc( 100% / 5 );
+        margin-bottom: 20px;
+        color: $black;
+
+        &::after {
+            opacity: 0;
+            content: "";
+            font-family: $round;
+            font-weight: $fw-bold;
+            color: $black;
+            font-size: 100px;
+            position: absolute;
+            top: 50%;
+            right: -30%;
+            transform: translateY( -50% )
+                    rotate(180deg);
+            transition: opacity ease $tr;
+            z-index: -1;
+            line-height: 1;
+            writing-mode: vertical-rl;
+            text-align: center;
+            height: 100%;
+            text-shadow: 1px 1px 4px $accent;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+        &:first-child {
+            &::after {
+                content: '14';
+            }
+        }
+
+        &:nth-child(2) {
+            &::after {
+                content: '14 +';
+            }
+        }
+
+        &:nth-child(3) {
+            &::after {
+                content: '14 PRO';
+            }
+        }
+
+        &:nth-child(4) {
+            &::after {
+                content: '14 PRO Max';
+            }
+        }
+
+        &:nth-child(5) {
+            &::after {
+                content: '13 PRO Max';
+            }
+        }
+
+        &:nth-child(6) {
+            &::after {
+                content: '13 PRO';
+            }
+        }
+
+        &:nth-child(7) {
+            &::after {
+                content: '13';
+            }
+        }
+
+        &:nth-child(8) {
+            &::after {
+                content: '12 PRO Max';
+            }
+        }
+
+        &:nth-child(9) {
+            &::after {
+                content: '12 PRO';
+            }
+        }
+
+        &:nth-child(10) {
+            &::after {
+                content: '12 Mini';
+            }
+        }
+
+        &:nth-child(11) {
+            &::after {
+                content: '12';
+            }
+        }
+
+        &:nth-child(12) {
+            &::after {
+                content: '11 PRO Max';
+            }
+        }
+
+        &:nth-child(13) {
+            &::after {
+                content: '11 PRO';
+            }
+        }
+
+        &:nth-child(14) {
+            &::after {
+                content: '11';
+            }
+        }
+
+        &:nth-child(15) {
+            &::after {
+                content: 'XR';
+            }
+        }
+
+        &:nth-child(16) {
+            &::after {
+                content: 'XS Max';
+            }
+        }
+
+        &:nth-child(17) {
+            &::after {
+                content: 'XS';
+            }
+        }
+
+        &:nth-child(18) {
+            &::after {
+                content: 'X';
+            }
+        }
+
+        &:nth-child(19) {
+            &::after {
+                content: 'SE 2';
+            }
+        }
+
+        &:nth-child(20) {
+            &::after {
+                content: '8 +';
+            }
+        }
+
+        &:nth-child(21) {
+            &::after {
+                content: '8';
+            }
+        }
+
+        &:nth-child(22) {
+            &::after {
+                content: '7 +';
+            }
+        }
+
+        &:nth-child(23) {
+            &::after {
+                content: '7';
+            }
+        }
+
+        &:nth-child(24) {
+            &::after {
+                content: '6s +';
+            }
+        }
+
+        &:nth-child(25) {
+            &::after {
+                content: '6s';
+            }
+        }
+
+        &:nth-child(26) {
+            &::after {
+                content: '6 +';
+            }
+        }
+
+        &:nth-child(27) {
+            &::after {
+                content: '6';
+            }
+        }
+
+        &:nth-child(28) {
+            &::after {
+                content: 'SE';
+            }
+        }
+
+        &:nth-child(29) {
+            &::after {
+                content: '5s';
+            }
+        }
+
+        &:nth-child(30) {
+            &::after {
+                content: '5c';
+            }
+        }
+
+        &:nth-child(31) {
+            &::after {
+                content: '5';
+            }
+        }
+
+        &:nth-child(32) {
+            &::after {
+                content: '4s';
+            }
+        }
+
+        &:nth-child(33) {
+            &::after {
+                content: '4';
+            }
+        }
+    }
+
+    &-inner {
+        font-weight: $fw-bold;
+        border: 1px solid $black;
+        border-radius: $bord;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media all and (min-width: $xl) {
+            transition: background ease $tr,
+                        opacity ease $tr;
+
+            &:hover {
+                background: $main;
+                opacity: $op;
+                color: $black;
+            }
+        }
+    }
+}
+
+.page-iphone-repair h1 {
+    text-align: left;
+}
+
+.page-iphone-repair .hero-list {
+    animation: none;
+}
+
+.page-iphone-repair .hero-lists {
+    max-height: 100%;
+}
+
+.page-iphone-repair .header-logo {
+	cursor: pointer;
+	transition: background ease 0.5s;
+
+	&:hover {
+		background: $accent;
+
+		svg path {
+			fill:  $white;
+		}
+
+		.header-arrow {
+			span {
+				border-color: $white;
+			}
+		}
+	}
+
+	.logo {
+		height: 100%;
+	}
+
+	svg:hover {
+		opacity: 1;
+	}
+}
