@@ -43,6 +43,7 @@
 
 			& path {
 				fill: $black;
+				transition: fill ease 0.5s;
 			}
 
 			&:hover {
@@ -213,3 +214,32 @@
 		}
 	}
 }
+
+.home .header-arrow {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	transform: translate( -30%, -50% );
+
+	span {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		border-right: 5px solid $black;
+		border-top: 5px solid $black;
+		transform: translate( -50%, -50% )
+					rotate(-140deg);
+	}
+}
+
+
+
+
+
+
