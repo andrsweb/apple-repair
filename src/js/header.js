@@ -1,9 +1,11 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { setTargetElement, getTargetElement } from './common/global'
+import smoothscroll from 'smoothscroll-polyfill';
 
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
+	smoothscroll.polyfill()
 	goBack()
 	toogleBurgerMenu()
 	scrollToTop()

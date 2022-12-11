@@ -52,7 +52,6 @@
 		&-text {
 			margin-left: 5px;
 			font-size: 15px;
-			padding-right: 10px;
 
 			@media all and (min-width: $sm) {
 				font-size: 10px;
@@ -61,12 +60,10 @@
 
 			@media all and (min-width: $m) {
 				font-size: 15px;
-				padding-right: 15px;
 			}
 
 			@media all and (min-width: $md) {
 				padding-right: 0;
-				font-size: 13px;
 			}
 
 			@media all and (min-width: $lg) {
@@ -75,10 +72,6 @@
 
 			@media all and (min-width: $xl) {
 				font-size: 16px;
-			}
-
-			@media all and (min-width: $xxl) {
-				padding-right: 40px;
 			}
 		}
 

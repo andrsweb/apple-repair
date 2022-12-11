@@ -246,3 +246,11 @@
         }
     }
 }
+
+.br {
+    display: none;
+
+    @media all and (min-width: $sm) {
+        display: block;
+    }
+}
