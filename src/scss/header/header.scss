@@ -43,15 +43,10 @@
 		svg {
 			width: 40px;
 			height: auto;
-			transition: opacity ease $tr;
 
 			& path {
 				fill: $black;
 				transition: fill ease 0.5s;
-			}
-
-			&:hover {
-				opacity: $op;
 			}
 		}
 	}
@@ -254,7 +249,6 @@
 .header-arrow {
 	cursor: pointer;
 	span {
-
 		&:hover {
 			transition: scale ease $tr;
 			scale: 1.1;

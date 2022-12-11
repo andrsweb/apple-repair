@@ -45,7 +45,7 @@
 		display: block;
 		width: 100%;
 		height: 4px;
-		background: $accent;
+		background: $black;
 		transition: transform ease $tr;
 
 		&::before, &::after {
@@ -56,7 +56,7 @@
 			left: 0;
 			width: 100%;
 			height: 4px;
-			background: $accent;
+			background: $black;
 		}
 
 		&::before {

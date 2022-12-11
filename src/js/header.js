@@ -6,6 +6,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 	goBack()
 	toogleBurgerMenu()
+	scrollToTop()
 } )
 
 const toogleBurgerMenu = () => {
@@ -49,6 +50,32 @@ const goBack = () => {
 
 		arrow.addEventListener( 'click', () => {
 			history.back()
+		} )
+	} )
+}
+
+const scrollToTop = () => {
+
+	const scrollArrow = document.querySelector( '.scroll-img' )
+
+	window.addEventListener( 'scroll', () => {
+		if( ! scrollArrow ) return
+
+		let scrollTop = window.scrollY
+
+		if ( scrollTop > 100 ) {
+			scrollArrow.classList.add( 'scrolled' )
+		} else {
+			if ( scrollTop < 100 ) {
+				scrollArrow.classList.remove( 'scrolled' )
+			}
+		}
+	})
+
+	scrollArrow.addEventListener( 'click', () => {
+		window.scrollTo( {
+			top: 0,
+			behavior: 'smooth'
 		} )
 	} )
 }

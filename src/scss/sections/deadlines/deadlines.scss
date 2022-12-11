@@ -1,20 +1,4 @@
 .page-deadlines .header-logo {
-	transition: background ease 0.5s;
-
-	&:hover {
-		background: $dark;
-
-		svg path {
-			fill:  $white;
-		}
-
-		.header-arrow {
-			span {
-				border-color: $white;
-			}
-		}
-	}
-
 	svg:hover {
 		opacity: 1;
 	}

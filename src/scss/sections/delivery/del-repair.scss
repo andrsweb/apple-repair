@@ -55,7 +55,8 @@
 
         &::before {
             content: "—";
-            color: $accent;
+            color: $span;
+            margin-right: 5px;
         }
     }
 
@@ -69,21 +70,6 @@
 }
 
 .page-del .header-logo {
-	transition: background ease 0.5s;
-
-	&:hover {
-		background: $dark;
-
-		svg path {
-			fill:  $white;
-		}
-
-		.header-arrow {
-			span {
-				border-color: $white;
-			}
-		}
-	}
 
 	svg:hover {
 		opacity: 1;
