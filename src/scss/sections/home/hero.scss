@@ -245,13 +245,14 @@
 	margin-bottom: 30px;
 	font-size: 15px;
 	color: $span;
+	text-shadow: none;
 
 	@media all and (min-width: $md) {
 		margin-bottom: 80px;
 
 		span {
 			padding: 20px;
-			border: 2px solid $dark;
+			border: 3px solid $dark;
 			border-radius: $bord;
 		}
 	}

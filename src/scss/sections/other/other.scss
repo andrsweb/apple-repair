@@ -32,16 +32,19 @@
 .page-iphone14-repair .header-logo {
     cursor: pointer;
 
-    &:hover {
-        background: $dark;
+    @media all and (min-width: $xl) {
+        &:hover {
+            background: $dark;
 
-        svg path {
-            fill: $white;
-        }
+            svg path {
+                fill: $white;
+            }
 
-        .header-arrow span {
-            border-color: $white;
-        }
+            .header-arrow span {
+                border-color: $white;
+            }
+    }
+
     }
 }
 

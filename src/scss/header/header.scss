@@ -92,6 +92,7 @@
 			position: static;
 			display: flex;
 			flex-direction: row;
+			align-items: center;
 			opacity: 1;
 			visibility: visible;
 			z-index: 1;
@@ -122,7 +123,7 @@
 		color: $dark;
 		margin-bottom: 30px;
 		text-align: center;
-		text-shadow: 1px 1px 2px $dark;
+		text-shadow: 1px 1px 2px $black;
 
 		@media all and (min-width: $md) {
 			font-size: 12px;
@@ -135,7 +136,7 @@
 		}
 
 		@media all and (min-width: $xxl) {
-			font-size: 25px;
+			font-size: 23px;
 		}
 	}
 
@@ -201,7 +202,8 @@
 		font-family: $ff;
 		font-size: 20px;
 		font-weight: $fw-bold;
-		text-shadow: 1px 1px 1px $black;
+		text-shadow: 1px 1px 1px $dark;
+		color: $dark;
 
 		@media all and (min-width: $md) {
 			font-size: 10px;
@@ -219,7 +221,7 @@
 	&-work {
 		font-size: 20px;
 		color: $span;
-		text-shadow: 1px 1px 1px $dark;
+		text-shadow: 1px 1px 1px $span;
 
 		@media all and (min-width: $md) {
 			font-size: 10px;

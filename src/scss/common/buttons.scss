@@ -8,7 +8,7 @@
 	color: $white;
 	box-shadow: 1px 1px 1px $dark;
 	border-radius: $bord;
-	text-shadow: 1px 1px 1px $dark;
+	text-shadow: 1px 1px 1px #111;
 	transition: opacity ease $tr,
 				margin ease 0.5s;
 	cursor: pointer;
