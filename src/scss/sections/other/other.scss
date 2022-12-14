@@ -22,16 +22,26 @@
     max-height: 100%;
 }
 
-.page .header-logo,
+.page-deadlines .header-logo,
+.page .header-logo, .page-del .header-logo,
 .polityc .header-logo, .page .header-logo,
 .page-ipad72019-repair .header-logo,
 .page-iphone14-glass .header-logo,
 .page-iphone-repair .header-logo,
 .page-ipad-repair .header-logo,
 .page-iphone14-repair .header-logo {
+    cursor: pointer;
 
-    svg:hover {
-        opacity: 1;
+    &:hover {
+        background: $dark;
+
+        svg path {
+            fill: $white;
+        }
+
+        .header-arrow span {
+            border-color: $white;
+        }
     }
 }
 

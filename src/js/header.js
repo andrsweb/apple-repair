@@ -44,7 +44,7 @@ const toogleBurgerMenu = () => {
 }
 
 const goBack = () => {
-	const headerArrow = document.querySelectorAll( '.header-arrow' )
+	const headerArrow = document.querySelectorAll( '.header-logo' )
 
 	headerArrow.forEach( arrow => {
 

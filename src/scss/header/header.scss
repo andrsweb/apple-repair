@@ -14,6 +14,7 @@
 		width: 40px;
 		height: auto;
 		z-index: 100;
+		transition: background ease $tr;
 
 		@media all and (min-width: $md) {
 			width: 80px;
@@ -27,17 +28,28 @@
 			height: 100vh;
 			padding-top: 25px;
 			border-right: 1px dotted $black;
-			transition: border-right ease $tr;
 			justify-content: center;
 		}
 
 		.logo {
+			display: flex;
+			justify-content: center;
 			height: 50px;
+			width: 100%;
+
+			@media all and (min-width: $md) {
+				justify-content: flex-start;
+			}
+
+			@media all and (min-width: $xl) {
+				justify-content: center;
+			}
+
 
 			&:hover {
-				transition: ease $tr;
-				scale: 1.1;
-			}
+				transition: opacity ease $tr;
+				opacity: $op;
+				}
 		}
 
 		svg {
@@ -229,30 +241,20 @@
 	top: 50%;
 	left: 50%;
 	width: 40px;
-	height: 40px;
-	transform: translate( -30%, -50% );
+	height: 100%;
+	transform: translate( -50%, -50% );
 
 	span {
 		display: block;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		width: 100%;
-		height: 100%;
+		width: 40px;
+		height: 40px;
 		border-right: 5px solid $black;
 		border-top: 5px solid $black;
 		transform: translate( -50%, -50% )
 					rotate(-140deg);
-	}
-}
-
-.header-arrow {
-	cursor: pointer;
-	span {
-		&:hover {
-			transition: scale ease $tr;
-			scale: 1.1;
-		}
 	}
 }
 
