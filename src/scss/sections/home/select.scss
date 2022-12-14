@@ -15,19 +15,48 @@
 
     &-links {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+
+        @media all and (min-width: $md) {
+            flex-direction: row;
+        }
     }
 
-    &-link {
+    &-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @media all and (min-width: $md) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+
+    &-link {
+        text-align: center;
         transition: opacity ease $tr;
 
         &:hover {
             opacity: $op;
+        }
+
+        img {
+            max-width: 50%;
+            margin: 0 auto 20px auto;
+
+            @media all and (min-width: $sm) {
+                max-width: 80%;
+            }
+
+            @media all and (min-width: $md) {
+                max-width: 100%;
+                margin: 0 0 20px 0;
+            }
         }
     }
 
