@@ -4,7 +4,7 @@ import { getWindowWidth, WINDOW_WIDTH_MD } from "./common/global"
 document.addEventListener("DOMContentLoaded", () => {
 	'use strict'
 
-	slidersInit()
+	slidersInit( '.command-wrapper' )
 })
 
 const sliders = []
@@ -18,7 +18,7 @@ export const slidersInit = selector => {
 	const slider = document.querySelector(selector)
 
 	if (! slider) return
-
+	console.log( slider )
 	if (getWindowWidth() <= WINDOW_WIDTH_MD) initSlider(slider)
 	else destroySlider( slider.id )
 }
