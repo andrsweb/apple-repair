@@ -16,7 +16,7 @@ export const slidersInit = selector => {
 
 	const slider = document.querySelector(selector)
 
-	if (!slider) return
+	if (! slider) return
 
 	if (getWindowWidth() <= WINDOW_WIDTH_MD) initSlider(slider)
 	else destroySlider( slider.id )

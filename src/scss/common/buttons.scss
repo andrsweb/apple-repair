@@ -24,11 +24,15 @@
 
 	@media all and (min-width: $lg) {
 		font-size: 15px;
-		padding: 6px 30px;
+		padding: 6px 10px;
 	}
 
 	@media all and (min-width: $xl) {
 		font-size: 20px;
+	}
+
+	@media all and (min-width: $xxl) {
+		padding: 6px 30px;
 	}
 }
 
