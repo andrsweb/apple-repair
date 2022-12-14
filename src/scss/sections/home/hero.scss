@@ -73,6 +73,14 @@
 			@media all and (min-width: $xl) {
 				font-size: 16px;
 			}
+
+			span {
+				margin-right: 5px;
+
+				@media all and (min-width: $sm) {
+					margin-right: 0;
+				}
+			}
 		}
 
 		img {
