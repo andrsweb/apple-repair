@@ -4,6 +4,7 @@ import { getWindowWidth, WINDOW_WIDTH_MD } from "./common/global"
 document.addEventListener("DOMContentLoaded", () => {
 	'use strict'
 
+	slidersInit()
 })
 
 const sliders = []
@@ -23,7 +24,7 @@ export const slidersInit = selector => {
 }
 
 const initSlider = slider => {
-	if (!slider || slider.classList.contains('swiper-initialized')) return
+	if (! slider || slider.classList.contains('swiper-initialized')) return
 
 	const id = slider.id ? slider.id.trim() : ''
 	let swiper
