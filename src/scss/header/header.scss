@@ -117,13 +117,21 @@
 	}
 
 	&-title {
+		display: flex;
 		font-family: $round;
 		font-weight: $fw-bold;
-		font-size: 25px;
+		font-size: 20px;
 		color: $dark;
 		margin-bottom: 30px;
 		text-align: center;
 		text-shadow: 1px 1px 2px $black;
+
+		.left {
+			text-align: left;
+			margin-right: 10px;
+			padding-right: 10px;
+			border-right: 4px solid $dark;
+		}
 
 		@media all and (min-width: $md) {
 			font-size: 12px;
@@ -133,10 +141,6 @@
 
 		@media all and (min-width: $xl) {
 			font-size: 20px;
-		}
-
-		@media all and (min-width: $xxl) {
-			font-size: 23px;
 		}
 	}
 

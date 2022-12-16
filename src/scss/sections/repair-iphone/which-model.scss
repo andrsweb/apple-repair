@@ -82,13 +82,13 @@
 
             &:first-child {
                 &::after {
-                    content: '14';
+                    content: '???';
                 }
             }
 
             &:nth-child(2) {
                 &::after {
-                    content: '14 +';
+                    content: '14 PRO Max';
                 }
             }
 
@@ -100,179 +100,191 @@
 
             &:nth-child(4) {
                 &::after {
-                    content: '14 PRO Max';
+                    content: '14 +';
                 }
             }
 
             &:nth-child(5) {
                 &::after {
-                    content: '13 PRO Max';
+                    content: '14';
                 }
             }
 
             &:nth-child(6) {
                 &::after {
-                    content: '13 PRO';
+                    content: '13 PRO Max';
                 }
             }
 
             &:nth-child(7) {
                 &::after {
-                    content: '13';
+                    content: '13 PRO';
                 }
             }
 
             &:nth-child(8) {
                 &::after {
-                    content: '12 PRO Max';
+                    content: '13 Mini';
                 }
             }
 
             &:nth-child(9) {
                 &::after {
-                    content: '12 PRO';
+                    content: '13';
                 }
             }
 
             &:nth-child(10) {
                 &::after {
-                    content: '12 Mini';
+                    content: '12 PRO Max';
                 }
             }
 
             &:nth-child(11) {
                 &::after {
-                    content: '12';
+                    content: '12 PRO';
                 }
             }
 
             &:nth-child(12) {
                 &::after {
-                    content: '11 PRO Max';
+                    content: '12';
                 }
             }
 
             &:nth-child(13) {
                 &::after {
-                    content: '11 PRO';
+                    content: '12 Mini';
                 }
             }
 
             &:nth-child(14) {
                 &::after {
-                    content: '11';
+                    content: '11 PRO Max';
                 }
             }
 
             &:nth-child(15) {
                 &::after {
-                    content: 'XR';
+                    content: '11 PRO';
                 }
             }
 
             &:nth-child(16) {
                 &::after {
-                    content: 'XS Max';
+                    content: '11';
                 }
             }
 
             &:nth-child(17) {
                 &::after {
-                    content: 'XS';
+                    content: 'XR';
                 }
             }
 
             &:nth-child(18) {
                 &::after {
-                    content: 'X';
+                    content: 'XS Max';
                 }
             }
 
             &:nth-child(19) {
                 &::after {
-                    content: 'SE 2';
+                    content: 'XS';
                 }
             }
 
             &:nth-child(20) {
                 &::after {
-                    content: '8 +';
+                    content: 'X';
                 }
             }
 
             &:nth-child(21) {
                 &::after {
-                    content: '8';
+                    content: 'SE 2';
                 }
             }
 
             &:nth-child(22) {
                 &::after {
-                    content: '7 +';
+                    content: '8 +';
                 }
             }
 
             &:nth-child(23) {
                 &::after {
-                    content: '7';
+                    content: '8';
                 }
             }
 
             &:nth-child(24) {
                 &::after {
-                    content: '6s +';
+                    content: '7 +';
                 }
             }
 
             &:nth-child(25) {
                 &::after {
-                    content: '6s';
+                    content: '7';
                 }
             }
 
             &:nth-child(26) {
                 &::after {
-                    content: '6 +';
+                    content: '6s +';
                 }
             }
 
             &:nth-child(27) {
                 &::after {
-                    content: '6';
+                    content: '6s';
                 }
             }
 
             &:nth-child(28) {
                 &::after {
-                    content: 'SE';
+                    content: '6 +';
                 }
             }
 
             &:nth-child(29) {
                 &::after {
-                    content: '5s';
+                    content: '6';
                 }
             }
 
             &:nth-child(30) {
                 &::after {
-                    content: '5c';
+                    content: 'SE';
                 }
             }
 
             &:nth-child(31) {
                 &::after {
-                    content: '5';
+                    content: '5s';
                 }
             }
 
             &:nth-child(32) {
                 &::after {
-                    content: '4s';
+                    content: '5c';
                 }
             }
 
             &:nth-child(33) {
+                &::after {
+                    content: '5';
+                }
+            }
+
+			&:nth-child(34) {
+                &::after {
+                    content: '4s';
+                }
+            }
+
+			&:nth-child(35) {
                 &::after {
                     content: '4';
                 }
