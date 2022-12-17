@@ -20,6 +20,7 @@
 .page-ipad-repair .hero-lists,
 .page-iphone14-repair .hero-lists {
     max-height: 100%;
+	height: auto;
 }
 
 .page-deadlines .header-logo,
@@ -34,7 +35,7 @@
 
     @media all and (min-width: $xl) {
         &:hover {
-            background: $dark;
+            background: $accent;
 
             svg path {
                 fill: $white;

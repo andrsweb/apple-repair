@@ -61,12 +61,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: background ease $tr,
-            opacity ease $tr;
+        transition: background ease $tr;
 
         &:hover {
-            background: $main;
-            opacity: $op;
+            background: $white;
         }
 
         @media all and (min-width: $xxl) {

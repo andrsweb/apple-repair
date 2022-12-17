@@ -1,6 +1,6 @@
 .header {
 	padding: 20px 0;
-	background: $white;
+	background: #fefeff;
 	display: flex;
 
 	.container {
@@ -82,7 +82,7 @@
 	&-inner {
 		position: relative;
 		z-index: 100;
-		background: $white;
+		background: #fefeff;
 		display: none;
 		flex-direction: column;
 		justify-content: space-between;
@@ -121,16 +121,26 @@
 		font-family: $round;
 		font-weight: $fw-bold;
 		font-size: 20px;
-		color: $dark;
+		color: $black;
 		margin-bottom: 30px;
 		text-align: center;
 		text-shadow: 1px 1px 2px $black;
+		transition: color ease $tr;
+
+		&:hover {
+			color: $span;
+
+			.left {
+				border-color: $span;
+			}
+		}
 
 		.left {
 			text-align: left;
 			margin-right: 10px;
 			padding-right: 10px;
-			border-right: 4px solid $dark;
+			border-right: 4px solid $black;
+			transition: border-color ease $tr;
 		}
 
 		@media all and (min-width: $md) {
@@ -192,7 +202,7 @@
 			}
 
 			&:hover {
-				text-decoration-color: $span;
+				text-decoration-color: $accent;
 			}
 		}
 	}
@@ -207,7 +217,7 @@
 		font-size: 20px;
 		font-weight: $fw-bold;
 		text-shadow: 1px 1px 1px $dark;
-		color: $dark;
+		color: $black;
 
 		@media all and (min-width: $md) {
 			font-size: 10px;

@@ -171,11 +171,17 @@
 			font-size: 25px;
 			margin-top: 30px;
 			text-align: center;
+			color: $accent;
 			text-shadow: 1px 1px 3px $black;
+			transition: color ease $tr;
 
 			@media all and (min-width: $lg) {
 				margin-top: 80px;
 				font-size: 40px;
+			}
+
+			&:hover {
+				color: $span;
 			}
 		}
 	}
@@ -186,64 +192,15 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		transition: opacity ease $tr;
+		cursor: pointer;
 
 		@media all and (min-width: $lg) {
 			width: 50%;
 		}
 
-		&-wrapper {
-			cursor: pointer;
-			padding: 30px;
-			width: 100%;
-			max-width: 450px;
-			text-align: center;
-			border: 10px dotted $dark;
-			border-top-left-radius: 20%;
-			border-top-right-radius: 40%;
-			border-bottom-right-radius: 20%;
-			border-bottom-left-radius: 40%;
-			color: $span;
-			transition:
-				border-top-left-radius ease $tr,
-				border-top-right-radius ease $tr,
-				border-bottom-right-radius ease $tr,
-				border-bottom-left-radius ease $tr;
-
-			&:hover {
-				border-top-left-radius: 40%;
-				border-top-right-radius: 20%;
-				border-bottom-right-radius: 40%;
-				border-bottom-left-radius: 20%;
-			}
-		}
-
-		h3 {
-			font-size: 30px;
-			text-shadow: 1px 1px 3px rgba(17, 17, 17, 0.459);
-
-			@media all and (min-width: $lg) {
-				font-size: 40px;
-			}
-		}
-
-		&-text {
-			font-size: 15px;
-
-			@media all and (min-width: $md) {
-				font-size: 20px;
-			}
-
-			@media all and (min-width: $lg) {
-				font-size: 25px;
-			}
-		}
-
-		&-time {
-			font-family: $ff;
-			font-weight: $fw-bold;
-			font-size: 25px;
-			text-shadow: 1px 1px 1px $white;
-			color: $dark;
+		&:hover {
+			opacity: $op;
 		}
 	}
 }
@@ -259,7 +216,7 @@
 
 		span {
 			padding: 20px;
-			border: 3px solid $dark;
+			border: 3px solid #dbe6f4;
 			border-radius: $bord;
 		}
 	}
