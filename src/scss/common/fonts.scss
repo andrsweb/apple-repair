@@ -53,14 +53,15 @@
 
 
 @font-face {
-    font-family: 'Rounds';
-    src: url('../fonts/RoundsBlack.eot');
-    src: url('../fonts/RoundsBlack.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RoundsBlack.woff2') format('woff2'),
-        url('../fonts/RoundsBlack.woff') format('woff'),
-        url('../fonts/RoundsBlack.ttf') format('truetype'),
-        url('../fonts/RoundsBlack.svg#RoundsBlack') format('svg');
-    font-weight: 900;
+    font-family: 'SONGER Grotesque';
+    src: url('../fonts/SONGERGrotesque-Bold.eot');
+    src: url('../fonts/SONGERGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SONGERGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/SONGERGrotesque-Bold.woff') format('woff'),
+        url('../fonts/SONGERGrotesque-Bold.ttf') format('truetype'),
+        url('../fonts/SONGERGrotesque-Bold.svg#SONGERGrotesque-Bold') format('svg');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+

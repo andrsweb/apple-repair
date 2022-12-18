@@ -70,6 +70,11 @@
                 color: $span;
                 font-weight: $fw-bold;
                 font-size: 22px;
+				transition: opacity ease $tr;
+
+				&:hover {
+					opacity: $op;
+				}
             }
         }
     }
