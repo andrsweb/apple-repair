@@ -6,7 +6,7 @@
 	}
 
 	.container {
-		max-width: 1400px;
+		max-width: 1500px;
 	}
 
 	h1 {
@@ -157,6 +157,7 @@
 	}
 
 	&-sale {
+		position: relative;
 		display: flex;
 		align-items: center;
 		width: 100%;
@@ -164,6 +165,7 @@
 		justify-content: center;
 		transition: opacity ease $tr;
 		cursor: pointer;
+		text-align: center;
 
 		@media all and (min-width: $lg) {
 			width: 50%;
@@ -171,6 +173,171 @@
 
 		&:hover {
 			opacity: $op;
+		}
+
+		&-info {
+			width: 100%;
+			max-width: 220px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate( -50%, -50% );
+
+			@media all and (min-width: $sm) {
+				transform: translate( -50%, -50% )
+						rotate(-5deg);
+			}
+
+			@media all and (min-width: 600px) {
+				transform: translateY( -50% )
+							rotate( -5deg );
+				left: 25%;
+			}
+
+			img {
+				max-width: 50%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate( -50%, -50% );
+
+				@media all and (min-width: 400px) {
+					max-width: 60%;
+				}
+
+				@media all and (min-width: $sm) {
+					max-width: 70%;
+				}
+
+				@media all and (min-width: 600px) {
+					max-width: 100%;
+				}
+
+				@media all and (min-width: $lg) {
+					max-width: 70%;
+				}
+
+				@media all and (min-width: $xl) {
+					max-width: 100%;
+				}
+			}
+		}
+
+		h3 {
+			font-size: 20px;
+			margin-bottom: 20px;
+			line-height: 1;
+
+			@media all and (min-width: 400px) {
+				font-size: 30px;
+			}
+
+			@media all and (min-width: $sm) {
+				font-size: 35px;
+			}
+
+			@media all and (min-width: 600px) {
+				font-size: 40px;
+				margin-bottom: 50px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 30px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 40px;
+			}
+		}
+
+		&-num {
+			font-weight: $fw-bold;
+			color: $span;
+			font-size: 30px;
+			line-height: 1;
+			text-shadow: 1px 1px 2px $span;
+			margin-bottom: 10px;
+			animation: wiggle ease 2.5s infinite;
+
+			@media all and (min-width: 400px) {
+				font-size: 40px;
+			}
+
+			@media all and (min-width: $sm) {
+				font-size: 40px;
+			}
+
+			@media all and (min-width: 600px) {
+				margin-bottom: 30px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 60px;
+			}
+
+			@keyframes wiggle {
+				0% { transform: rotate(0deg); }
+				80% { transform: rotate(0deg); }
+				85% { transform: rotate(5deg); }
+				95% { transform: rotate(-5deg); }
+				100% { transform: rotate(0deg); }
+			}
+		}
+
+		&-time {
+			font-size: 15px;
+			color: $accent;
+			margin-bottom: 10px;
+
+			@media all and (min-width: 400px) {
+				font-size: 16px;
+			}
+
+			@media all and (min-width: $sm) {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}
+
+			@media all and (min-width: 600px) {
+				font-size: 25px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 20px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 25px;
+			}
+
+			.end, .start {
+				color: $span;
+			}
+		}
+
+		&-text {
+			font-size: 6px;
+			color: $accent;
+
+			@media all and (min-width: 400px) {
+				font-size: 8px;
+			}
+
+			@media all and (min-width: $sm) {
+				font-size: 10px;
+			}
+
+			@media all and (min-width: 600px) {
+				font-size: 12px;
+			}
+
+			@media all and (min-width: $lg) {
+				font-size: 10px;
+			}
+
+			@media all and (min-width: $xl) {
+				font-size: 12px;
+			}
 		}
 	}
 }

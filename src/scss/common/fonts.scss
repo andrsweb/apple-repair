@@ -1,65 +1,96 @@
+/* fira-sans-300 - latin_cyrillic */
 @font-face {
-    font-family: 'Neo Sans Pro Cyr';
-    src: url('../fonts/NeoSansProCyr-Bold.eot');
-    src: url('../fonts/NeoSansProCyr-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NeoSansProCyr-Bold.woff2') format('woff2'),
-        url('../fonts/NeoSansProCyr-Bold.woff') format('woff'),
-        url('../fonts/NeoSansProCyr-Bold.ttf') format('truetype'),
-        url('../../fonts/NeoSansProCyr-Bold.svg#NeoSansProCyr-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/fira-sans-v16-latin_cyrillic-300.eot');
+	/* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/fira-sans-v16-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/fira-sans-v16-latin_cyrillic-300.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-300.woff') format('woff'),
+		/* Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-300.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/fira-sans-v16-latin_cyrillic-300.svg#FiraSans') format('svg');
+	/* Legacy iOS */
+	font-display: swap;
 }
 
+/* fira-sans-regular - latin_cyrillic */
 @font-face {
-    font-family: 'Neo Sans Pro Cyr';
-    src: url('../fonts/NeoSansProCyr-Light.eot');
-    src: url('../fonts/NeoSansProCyr-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NeoSansProCyr-Light.woff2') format('woff2'),
-        url('../fonts/NeoSansProCyr-Light.woff') format('woff'),
-        url('../fonts/NeoSansProCyr-Light.ttf') format('truetype'),
-        url('../fonts/NeoSansProCyr-Light.svg#NeoSansProCyr-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/fira-sans-v16-latin_cyrillic-regular.eot');
+	/* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/fira-sans-v16-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/fira-sans-v16-latin_cyrillic-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-regular.woff') format('woff'),
+		/* Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-regular.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/fira-sans-v16-latin_cyrillic-regular.svg#FiraSans') format('svg');
+	/* Legacy iOS */
+	font-display: swap;
 }
 
+/* fira-sans-500 - latin_cyrillic */
 @font-face {
-    font-family: 'Neo Sans Pro Cyr';
-    src: url('../fonts/NeoSansProCyr-Regular.eot');
-    src: url('../fonts/NeoSansProCyr-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NeoSansProCyr-Regular.woff2') format('woff2'),
-        url('../fonts/NeoSansProCyr-Regular.woff') format('woff'),
-        url('../fonts/NeoSansProCyr-Regular.ttf') format('truetype'),
-        url('../fonts/NeoSansProCyr-Regular.svg#NeoSansProCyr-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/fira-sans-v16-latin_cyrillic-500.eot');
+	/* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/fira-sans-v16-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/fira-sans-v16-latin_cyrillic-500.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-500.woff') format('woff'),
+		/* Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-500.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/fira-sans-v16-latin_cyrillic-500.svg#FiraSans') format('svg');
+	/* Legacy iOS */
+	font-display: swap;
 }
 
+/* fira-sans-700 - latin_cyrillic */
 @font-face {
-    font-family: 'Neo Sans Pro Cyr';
-    src: url('../fonts/NeoSansProCyr-Medium.eot');
-    src: url('../fonts/NeoSansProCyr-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NeoSansProCyr-Medium.woff2') format('woff2'),
-        url('../fonts/NeoSansProCyr-Medium.woff') format('woff'),
-        url('../fonts/NeoSansProCyr-Medium.ttf') format('truetype'),
-        url('../fonts/NeoSansProCyr-Medium.svg#NeoSansProCyr-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/fira-sans-v16-latin_cyrillic-700.eot');
+	/* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/fira-sans-v16-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/fira-sans-v16-latin_cyrillic-700.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-700.woff') format('woff'),
+		/* Modern Browsers */
+		url('../fonts/fira-sans-v16-latin_cyrillic-700.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/fira-sans-v16-latin_cyrillic-700.svg#FiraSans') format('svg');
+	/* Legacy iOS */
+	font-display: swap;
 }
 
 
-
 @font-face {
-    font-family: 'SONGER Grotesque';
-    src: url('../fonts/SONGERGrotesque-Bold.eot');
-    src: url('../fonts/SONGERGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SONGERGrotesque-Bold.woff2') format('woff2'),
-        url('../fonts/SONGERGrotesque-Bold.woff') format('woff'),
-        url('../fonts/SONGERGrotesque-Bold.ttf') format('truetype'),
-        url('../fonts/SONGERGrotesque-Bold.svg#SONGERGrotesque-Bold') format('svg');
+    font-family: 'Univia Pro';
+    src: url('../fonts/UniviaPro-Bold.eot');
+    src: url('../fonts/UniviaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniviaPro-Bold.woff2') format('woff2'),
+        url('../fonts/UniviaPro-Bold.woff') format('woff'),
+        url('../fonts/UniviaPro-Bold.ttf') format('truetype'),
+        url('../fonts/UniviaPro-Bold.svg#UniviaPro-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

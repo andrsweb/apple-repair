@@ -4,7 +4,7 @@
 	display: flex;
 
 	.container {
-		max-width: 1400px;
+		max-width: 1500px;
 		padding: 0 24px;
 	}
 
@@ -70,7 +70,12 @@
 		width: 100%;
 
 		@media all and (min-width: $md) {
+			display: none;
+		}
+
+		@media all and (min-width: $xl) {
 			width: 80px;
+			display: flex;
 		}
 	}
 
@@ -96,6 +101,10 @@
 			opacity: 1;
 			visibility: visible;
 			z-index: 1;
+			width: 100%;
+		}
+
+		@media all and (min-width: $xl) {
 			width: calc( 100% - 80px );
 		}
 
@@ -116,41 +125,67 @@
 		}
 	}
 
+	&-new-logo {
+		display: flex;
+		align-items: center;
+		position: relative;
+		transform: rotate( -15deg);
+	}
+
+	.new-logo-text {
+		font-size: 20px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 22px;
+		}
+	}
+
 	&-title {
 		display: flex;
+		align-items: center;
 		font-family: $round;
 		font-weight: $fw-bold;
 		font-size: 20px;
 		color: $accent;
-		margin-bottom: 30px;
-		text-align: center;
+		text-align: left;
 		text-shadow: 1px 1px 1px $black;
 		transition: color ease $tr;
 
 		&:hover {
 			color: $span;
 
+			.gear {
+				animation: gear 1s linear infinite;
+			}
+
 			.left {
 				border-color: $span;
 			}
 		}
 
-		.left {
-			text-align: left;
-			margin-right: 10px;
-			padding-right: 10px;
-			border-right: 4px solid $accent;
-			transition: border-color ease $tr;
-		}
+		.gear {
+			position: absolute;
+			top: 32%;
+			left: 33%;
+			animation: gear 5s linear infinite;
 
-		@media all and (min-width: $md) {
-			font-size: 12px;
-			margin-bottom: 0;
-			text-align: left;
-		}
+			@keyframes gear {
+				0% {
+					transform: rotate( 0deg );
+				}
 
-		@media all and (min-width: $xl) {
-			font-size: 20px;
+				100% {
+					transform: rotate( 360deg );
+				}
+			}
 		}
 	}
 
@@ -189,12 +224,21 @@
 				}
 			}
 
+			@media all and (min-width: 850px) {
+				font-size: 13px;
+			}
+
 			@media all and (min-width: $lg) {
 				font-size: 15px;
 			}
 
+			@media all and (min-width: 1100px) {
+				font-size: 18px;
+			}
+
 			@media all and (min-width: $xl) {
 				margin-right: 20px;
+				font-size: 15px;
 			}
 
 			@media all and (min-width: $xxl) {
@@ -223,12 +267,20 @@
 			font-size: 10px;
 		}
 
-		@media all and (min-width: $lg) {
+		@media all and (min-width: 850px) {
 			font-size: 15px;
 		}
 
+		@media all and (min-width: 1100px) {
+			font-size: 25px;
+		}
+
 		@media all and (min-width: $xl) {
-			font-size: 22px;
+			font-size: 20px;
+		}
+
+		@media all and (min-width: $xxl) {
+			font-size: 25px;
 		}
 	}
 
@@ -241,12 +293,20 @@
 			font-size: 10px;
 		}
 
-		@media all and (min-width: $lg) {
+		@media all and (min-width: 850px) {
+			font-size: 13px;
+		}
+
+		@media all and (min-width: 1100px) {
+			font-size: 18px;
+		}
+
+		@media all and (min-width: $xl) {
 			font-size: 15px;
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 22px;
+			font-size: 18px;
 		}
 	}
 }
