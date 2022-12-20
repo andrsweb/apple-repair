@@ -19,6 +19,8 @@
     }
 
     @media all and (min-width: $xl) {
+		font-size: 20px;
+
         &::after {
             opacity: 0;
             content: "";

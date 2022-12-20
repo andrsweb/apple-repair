@@ -53,7 +53,7 @@
 
     &-inner {
         height: 100%;
-        font-weight: $fw-bold;
+        font-weight: $fw-regular;
         border: 1px solid $black;
         border-radius: $bord;
         padding: 10px;
@@ -61,10 +61,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: background ease $tr;
+        transition: background ease $tr,
+					border-color ease $tr,
+					color ease $tr;
 
         &:hover {
-            background: $white;
+            background: $accent;
+			border-color: $accent;
+			color: $white;
         }
 
         @media all and (min-width: $xxl) {
@@ -77,7 +81,7 @@
         text-align: center;
 
         @media all and (min-width: $md) {
-            font-size: 15px;
+            font-size: 20px;
         }
     }
 
@@ -104,14 +108,13 @@
         border: 1px solid $black;
         border-radius: $bord;
         padding: 10px;
-        transition: background ease $tr,
-            opacity ease $tr;
+        transition: color ease $tr,
+					border-color ease $tr;
         text-align: center;
 
         &:hover {
-            background: $main;
-            opacity: $op;
-            color: $black;
+            background: $white;
+			border-color: $accent;
         }
     }
 }

@@ -41,6 +41,15 @@
     }
 }
 
+.page-iphone14-repair, .page-iphone-repair {
+
+	@media all and (min-width: $xl) {
+		h1 {
+			margin-bottom: 10px;
+		}
+	}
+}
+
 .other {
     padding: 30px 0;
 
@@ -98,7 +107,7 @@
             font-size: 20px;
             text-align: center;
             margin-bottom: 20px;
-            color: $dark;
+            color: $accent;
 
             span {
                 font-weight: $fw-bold;
@@ -196,61 +205,98 @@
             }
         }
 
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 10px;
+			background: $main;
+			border-radius: $bord;
+			min-height: 250px;
+
+			@media all and (min-width: $xl) {
+                padding: 30px;
+            }
+		}
+
         &-inner {
             display: flex;
             flex-direction: column;
-            padding: 20px;
-            height: 100%;
         }
 
         &-info {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+			justify-content: space-between;
             margin-bottom: 20px;
-
-            @media all and (min-width: $lg) {
-                flex-direction: row;
-            }
         }
 
-        &-img {
-            margin-bottom: 10px;
+		.stars {
+			display: flex;
+		}
 
-            @media all and (min-width: $lg) {
-                margin-bottom: 0;
-            }
+		&-stars {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 
-            img {
-                border-radius: 50%;
+			@media all and (min-width: $md) {
+                margin-top: 20px;
             }
-        }
+		}
 
         &-name {
             font-weight: $fw-bold;
+			font-size: 15px;
 
-            @media all and (min-width: $lg) {
-                margin-left: 20px;
+			@media all and (min-width: $m) {
+                font-size: 20px;
             }
-        }
 
-        &-stars {
-            display: flex;
+			@media all and (min-width: $md) {
+                font-size: 15px;
+            }
 
-            @media all and (min-width: $lg) {
-                margin-left: auto;
+			@media all and (min-width: $xl) {
+                font-size: 20px;
             }
         }
 
         &-text {
             font-size: 12px;
-            text-align: center;
 
             @media all and (min-width: $m) {
                 font-size: 15px;
             }
+
+			@media all and (min-width: $md) {
+                font-size: 12px;
+            }
+
+			@media all and (min-width: $xl) {
+                font-size: 15px;
+            }
         }
+
+		&-data {
+			font-size: 12px;
+			font-weight: $fw-bold;
+
+			@media all and (min-width: $m) {
+                font-size: 15px;
+            }
+		}
     }
+}
+
+.testi-rate {
+	margin-bottom: 30px;
+}
+
+.testi-rate-stars {
+	display: flex;
+	margin-bottom: 5px;
 }
 
 .br {

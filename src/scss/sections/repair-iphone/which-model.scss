@@ -48,11 +48,11 @@
         }
 
         @media all and (min-width: $md) {
-            font-size: 15px;
+            font-size: 20px;
         }
 
         @media all and (min-width: $lg) {
-            width: calc( 100% / 5 );
+            width: calc( 100% / 4 );
         }
 
         @media all and (min-width: $xl) {
@@ -299,19 +299,24 @@
     }
 
     &-inner {
-        font-weight: $fw-bold;
+        font-weight: $fw-regular;
+		background: $white;
         border: 1px solid $black;
         border-radius: $bord;
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: background ease $tr,
-            opacity ease $tr;
+		opacity: 1;
+        transition: border-color ease $tr,
+            background ease $tr,
+			color ease $tr;
 
         &:hover {
-            background: $main;
-            opacity: $op;
+			background: $accent;
+            border-color: $accent;
+			opacity: 1;
+			color: $white;
         }
 
         @media all and (min-width: $xxl) {

@@ -10,7 +10,7 @@
     }
 
     h2 {
-        margin-bottom: 40px; //80
+        margin-bottom: 40px;
         text-align: left;
     }
 
@@ -293,13 +293,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: background ease $tr,
-            opacity ease $tr;
+        transition: background ease $tr;
 
         &:hover {
-            background: $main;
-            opacity: $op;
-            color: $black;
+            background: $accent;
         }
 
         @media all and (min-width: $xxl) {
