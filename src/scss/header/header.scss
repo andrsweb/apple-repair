@@ -129,7 +129,20 @@
 		display: flex;
 		align-items: center;
 		position: relative;
-		transform: rotate( -15deg);
+		transform: rotate( -15deg)
+				translateY( 5px);
+
+		img {
+			width: 52px;
+
+			@media all and (min-width: $md) {
+				width: 40px;
+			}
+
+			@media all and (min-width: $md) {
+				width: 65px;
+			}
+		}
 	}
 
 	.new-logo-text {
@@ -144,7 +157,7 @@
 		}
 
 		@media all and (min-width: $xl) {
-			font-size: 22px;
+			font-size: 28px;
 		}
 	}
 
@@ -174,8 +187,17 @@
 		.gear {
 			position: absolute;
 			top: 32%;
-			left: 33%;
+			left: 35%; //32
 			animation: gear 5s linear infinite;
+			width: 32%;
+
+			@media all and (min-width: $md) {
+				left: 36%;
+			}
+
+			@media all and (min-width: $xl) {
+				left: 36%;
+			}
 
 			@keyframes gear {
 				0% {

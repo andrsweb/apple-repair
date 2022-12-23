@@ -8,18 +8,15 @@ const changeTime = () => {
 	const startHour = document.querySelector( '.start' )
 	const endHour   = document.querySelector( '.end' )
 	const date      = new Date
-	let hours     = date.getHours()
-	const start     = hours - 1
-	let end       = hours + 2
+	let hours       = date.getHours()
+	let start       = hours - 1
+	let end         = hours + 2
 
 	if( ! startHour && ! endHour ) return
 
-	if( hours = 0 ) start = 23
-	if( hours = 24 ) end = 0
-	if( hours > 24 ) end = -24
-
+	start = start < 0 ? 23 : start
+	end   = end > 23 ? ( end - 23 ) : end
 
 	startHour.innerHTML = start
-
-	endHour.innerHTML = end
+	endHour.innerHTML   = end
 }
