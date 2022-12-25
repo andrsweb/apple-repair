@@ -152,6 +152,15 @@
 		}
 	}
 
+	&-worktime {
+		font-size: 20px;
+		text-align: center;
+		margin-top: 20px;
+		font-weight: $fw-bold;
+		text-shadow: 1px 1px 1px #042a2b54;
+		color: $span;
+	}
+
 	&-sale {
 		position: relative;
 		display: flex;

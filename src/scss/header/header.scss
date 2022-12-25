@@ -159,6 +159,10 @@
 		@media all and (min-width: $xl) {
 			font-size: 28px;
 		}
+
+		span {
+			color: $span;
+		}
 	}
 
 	&-title {

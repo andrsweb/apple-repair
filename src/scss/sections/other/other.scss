@@ -67,6 +67,10 @@
         font-weight: $fw-bold;
     }
 
+	h1 {
+		line-height: 1.6;
+	}
+
     &-items {
         display: flex;
         flex-direction: column;
@@ -112,8 +116,13 @@
             span {
                 font-weight: $fw-bold;
                 color: $span;
-                font-size: 22px;
+                font-size: 23px;
             }
+
+			.start, .end {
+				font-weight: $fw-bold;
+				font-size: 23px;
+			}
         }
 
         &-disc {
@@ -150,6 +159,10 @@
 
     .hero-lists-wrapper {
         width: 100%;
+
+		.hero-worktime {
+			text-align: left;
+		}
     }
 
     .hero-list-num {
