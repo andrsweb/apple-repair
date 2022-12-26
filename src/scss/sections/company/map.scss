@@ -109,7 +109,6 @@
         max-width: 500px;
         border: 0;
         border-radius: $bord;
-        filter: grayscale(70%);
 
         @media all and (min-width: $lg) {
             max-width: 400px;

@@ -1,7 +1,21 @@
 @@include( 'template-parts/header/header.html', { title: 'Ремонт iPad', class: 'page-ipad-repair' } )
 
 <main>
-    @@include( 'template-parts/sections/home/hero.html', { title: '<span>Ремонт</span> iPad' } )
+    <section class="hero">
+	<div class="container">
+		@@include( 'template-parts/sections/home/hero-subtext.html'  )
+		<h1>
+			<span>Ремонт</span> iPad
+		</h1>
+		<h2 class="metro">метро Красногвардейская</h2>
+		<div class="hero-wrapper">
+			<div class="hero-items">
+				@@include( 'template-parts/sections/home/hero-lists.html' )
+				@@include( 'template-parts/sections/home/hero-sale.html' )
+			</div>
+		</div>
+	</div>
+</section>
     <section class="which-model">
         <div class="container">
             <h2>

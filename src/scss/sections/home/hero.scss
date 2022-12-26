@@ -354,16 +354,20 @@
 .hero-subtext {
 	margin-bottom: 30px;
 	font-size: 15px;
-	color: $span;
+	color: $accent;
+	padding: 10px;
 	text-shadow: none;
+	border: 3px dotted #dbe6f4;
+			border-radius: 20px;
 
 	@media all and (min-width: $md) {
 		margin-bottom: 80px;
+		border: 0;
 
 		span {
 			padding: 20px;
-			border: 3px solid #dbe6f4;
-			border-radius: $bord;
+			border: 3px dotted #dbe6f4;
+			border-radius: 20px;
 		}
 	}
 
