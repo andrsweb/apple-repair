@@ -40,24 +40,21 @@
     }
 
     &-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         height: 100%;
         width: 100%;
+        display: flex;
     }
 
     &-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: $ff;
         font-weight: $fw-bold;
         margin-bottom: 20px;
-        font-size: 20px;
-
-        &::before {
-            content: "—";
-            color: $span;
-            margin-right: 5px;
-        }
+        margin-right: 20px;
+        font-size: 30px;
+        color: $span;
     }
 
     &-text {

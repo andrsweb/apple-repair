@@ -5,8 +5,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
 } )
 
 const changeTime = () => {
-	const startHour = document.querySelector( '.start' )
-	const endHour   = document.querySelector( '.end' )
+	const startHour = document.querySelectorAll( '.start' )
+	const endHour   = document.querySelectorAll( '.end' )
 	const date      = new Date
 	let hours       = date.getHours()
 	let start       = hours - 1
@@ -17,6 +17,12 @@ const changeTime = () => {
 	start = start < 0 ? 23 : start
 	end   = end > 23 ? ( end - 23 ) : end
 
-	startHour.innerHTML = start
-	endHour.innerHTML   = end
+	startHour.forEach( hour => {
+		hour.innerHTML = start
+	} )
+
+	endHour.forEach( hour => {
+		hour.innerHTML   = end
+	} )
+
 }
