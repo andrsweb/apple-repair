@@ -6,6 +6,10 @@
     font-size: 10px;
     text-align: center;
 
+    @media all and (min-width: $sm) {
+        font-size: 18px;
+    }
+
     @media all and (min-width: $m) {
         width: calc( 100% / 3 );
     }
@@ -193,11 +197,19 @@
 .page-ipad-repair .hero, .page-iphone-repair .hero {
 
 	h1 {
-		margin-bottom: 50px;
+		margin-bottom: 20px;
+
+        @media all and (min-width: $xl){
+            font-size: 60px;
+        }
 	}
 
 	.metro {
 		text-align: left;
         color: $span;
+
+        @media all and (min-width: $xl){
+            font-size: 40px;
+        }
 	}
 }
